@@ -27,32 +27,77 @@ This can be accomplished in the following ways:
 
 ## Database and Credentials
 
-By default, **SAMLTD** is the database and **ADMIN/ADMIN** are the credentials utilized by the samples. 
+By default, **SAMLTD** is the database and **ADMIN** is the user credential utilized by the samples. 
 
-These references are located in the Web project's **web.config** and **Global.asax** files. If a different 
-database or other credentials are required, these files will require modification.
+These references are located in the Web project's **web.config** and **Login.aspx** files. Credentials  
+are entered into a login page and stored in cookies in the developer's browser cache. Note that
+the password credential is not stored in a cookie.
 
-## Kendo Files
+## Web API WCF Data Services
 
-The sample solutions require certain Kendo files that are not able to be distributed via the
-samples and require the ISV/Partner to have the appropriate Kendo License. Therefore, prior to 
-compiling and running the solution, the required Kendo files will need to be located, copied to 
-the solution's appropriate folder and added to the Web project within the solution.
+This sample is no longer applicable as the newer version of the OData specification does not allow
+the behavior being demonstated. However, the sample is being left in the SDK merely for reference
+and potential future enhancement.
 
-### Steps
+## Resx Generation
 
-The following steps are required to add the required Kendo files to the Web project of the solution:
+Sample source files are provided as examples of a Resource Information Text File and Settings Text
+File, which can be supplied to the Resx Generation Utility. Refer to the Resx Generation Utility document
+located in the **docs\utilities** folder for details.
 
-* Locate the **kendo.all.min.js** and **kendo.custom.min.js** files
-> These files are also located in the Sage 300 Online Web's **Scripts/Kendo** folder
+## Web API Samples
 
-* Copy the **kendo.all.min.js** and **kendo.custom.min.js** files to the solution's Web project's 
-**Scripts/Kendo** folder
-* Load solution in Visual Studio and include these two files in the Web project
-* The solution is now compilable and runnable 
+The Admin user does not have Sage 300 Web API privileges. In order to make various Sage 300 Web API 
+requests, you will need to configure a new user and give it the proper user authorizations. Documentation
+for the samples will assume you use **SAMLTD** as the database and **WEBAPI/WEBAPI** as the credentials.
 
-## Grid Enhancement
+Configuring a new user can be accomplished as follows:
 
-The **Segment Codes** and **Source Journal Profiles** samples have been refactored to utilize the 
-grid enhancement logic. The **Receipt** sample, while having a grid, was not a receipient of the grid 
-enhancement logic. This will be addressed in the next release.
+* In Sage 300, navigate to Administrative Services -> Users
+* Enter **WEBAPI** as the User ID, **WEBAPI** as the User Name, **WEBAPI** as the Password and **WEBAPI** in Verify
+* Click Save when finished
+* Go to Administrative Services -> Security Groups
+* Ensure that for each application that has Sage 300 Web API rights that there is a group ID associated with it
+* Go to Administrative Services -> User Authorizations
+* For the WEBAPI user, assign the group ID that has Sage 300 Web API rights to each corresponding application
+
+## Web API Sample POST Payloads
+
+Sample **POST** payload files are provided in the **samples\WebApi_SamplePostPayloads** folder and these are  
+further categorized by module. These sample payloads will illustrate a typical POST payload and have been 
+populated with values from the **SAMLTD** database.
+
+### How to use
+
+1.	Run Swagger (http://localhost/sage300webapi)
+2.  Click the **Open Swagger UI** button
+2.	In the **samples\WebApi_SamplePostPayloads** folder, look for the text file for the endpoint that you want 
+    to use and open it in your editor of choice (Example: OE\OEOrders_OrdersOnly.txt)
+3.	Copy the contents from the text file
+4.	Back in Swagger, expand the endpoint that you want to use (Example: OEOrders)
+5.	Click **POST** to expand it the endpoint
+6.	Paste the contents of the sample payload to the **Value** field
+7.	Click **Try it out!**  
+8.	Enter Username and Password if prompted (remember to upper case your credentials)
+9.	The Record will be created and the responses displayed in the Response Body, 
+    Response Code and Response Headers fields
+
+### Notes
+
+>The contents of the sample payload files are based upon the **SAMLTD** database
+
+*	Running a POST endpoint with same content for setup screens like GL Accounts will result in an error 
+  since the record already exists. Either delete the record first or modify the contents of the payload
+  
+*	For some endpoints, there are different examples:
+  *	OEOrders endpoint:
+    *	OEOrders_OrdersOnly.txt
+    *	OEOrders_WithOptFields.txt
+    *	OEOrders_WithShipmentsandInvoice.txt
+  *	ARReceiptAndAdjustmentBatches endpoint:
+    *	ARReceiptAndAdjustmentBatches_Adjustment.txt (AR Adjustment Entry)
+    *	ARReceiptAndAdjustmentBatches_Prepayment.txt (AR Receipts – Prepayment type)
+
+>The batch file named **UpdateSamplesFromColumbusWeb.bat** is used to synchronize the Sage 300 framework codebase with the Sage 300 Web SDK samples. This batch file is only used by internal Sage developers, not our development partners.
+
+>The batch file named **CleanAllSamples.bat** is used to remove build artifacts from all samples. This batch file is only used by internal Sage developers, not our development partners.

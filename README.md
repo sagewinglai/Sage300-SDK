@@ -36,19 +36,54 @@ contribute as well
 
 ## Folders and Contents
 
+### bin
+
+The **bin** folder contains the assembly (binary) files which have already been compiled and 
+for the SDK utilities and wizards. The folder contains the following sub-folders in order 
+to segregate the files:
+
+* utilities
+* wizards
+
 ### docs
 
 The **docs** folder contains the documentation for the SDK and contains the following sub-
 folders in order to segregate the documentation:
 
+* customization
 * development
 * patterns
 * presentations
 * standards
+* templates
 * upgrades
 * utilities
 * webapi
 * wizards
+
+### help
+
+The **help** folder contains CHM files
+
+> **Only the Common and Core assemblies for web screens are documented at this time**
+
+The following sub-folder contains help files for the Classic (Desktop) SDK:
+
+* classic
+
+### maps
+
+The **maps** folder contains the Visual Studio Code Maps for certain entities, controllers, 
+utilities and helper classes and contains the following sub-folders in order to segregate 
+the code maps:
+
+* ap
+* ar
+* framework
+* gl
+* ic
+* oe
+* po
 
 ### patch
 
@@ -56,17 +91,32 @@ The **patch** folder contains any patches which may be required to be applied to
 
 * Generated solutions
 * Generated projects
-* Local Sage 300 2017 Application folders
-* Customr Sage 300 2017 Application folders
 
 A README.md file in the patch folder will explain the patch, the reason for the patch 
 and the action to be taken.
 
+### resources
+
+The **resources** folder contains the Sage 300 Resources used to localize the Web Screens.
+They are located here to be leveraged by the Sage 300 Language Resource Wizard if the 
+generation of non-supported language resource files are required.
+
 ### samples
 
 The **samples** folder contains sample projects, which are stand-alone, runnable versions of 
-different screens and reports within the Sage 300 application. These samples are to provide 
-implementation knowledge.
+different screens and reports within the Sage 300 application as well as customization samples. 
+These samples are to provide implementation knowledge.
+
+> **The README file in the samples folder is important and contains prerequisites for running samples.**
+
+### settings
+
+The **settings** folder contains an **AccpacDotNetVersion.props** file, which is used by the samples to  
+reference the correct version of the Accpac libraries. Prior to 2018.2, every sample had this file local
+to the sample. This single version of the files will allow for an easier upgrade between releases as only
+the single file will need to be modified for correct references.
+
+> **A generated solution by the Solution Wizard will still contain a local AccpacDotNetVersion.props file .**
 
 ### src
 
@@ -76,14 +126,6 @@ sub-folders in order to segregate the source:
 * utilities
 * wizards
 
-> **The README file in the samples folder is important and contains prerequisites for running samples.
-
-### upgrades
-
-The **upgrades** folder contains at a minimum the files required to updated any solutions and 
-projects created in a previous version of the SDK to the current version. The documentation
-for any upgrades will be located in the **docs/upgrades** folder.
-
 ### LICENSE.md
 
 A read-only file for displaying the MIT Copyright notice
@@ -91,6 +133,10 @@ A read-only file for displaying the MIT Copyright notice
 ### README.md
 
 A read-only version for displaying SDK information (this page!)
+
+### SUPPORT.md
+
+A read-only file for displaying Development Partner Program Support information
 
 ### VERSION.md
 
@@ -173,11 +219,11 @@ are also made in the develop branch**
 
 ### Release Branches
 
-The release branches (i.e. **release-2017**, **release-2017.1**, etc.) contains 
+The release branches (i.e. **release-2018**, **release-2018.1**, etc.) contains 
 the contents for that particular release/version of the SDK.
  
 When the next version of the SDK is released, the **master** branch is copied into, 
-for example, the **release-2017** branch, the **develop** branch is copied to 
+for example, the **release-2018** branch, the **develop** branch is copied to 
 **master** and the **develop** branch then becomes the basis for the next release.
 
 develop --> master --> release-…
@@ -186,8 +232,8 @@ There is only one in-progress version branch: **develop**
 
 There is only one current version branch: **master**
 
-There are to be numerous version branches: **release-2017**, **release-2017.1**, 
-**release-2017.2**, etc.
+There are to be numerous version branches: **release-2018**, **release-2018.1**, 
+**release-2018.2**, etc.
 
 > **Only Sage collaborators can make changes to these branches**
 
@@ -217,65 +263,8 @@ Application is released.
 
 ## Wizards
 
-The following sections will cover topics such as building, installing, uninstalling 
-and the debugging of the SDK.
-
-### How to Build the Sage 300 UI Wizard Package
-
-The following steps illustrate how to build the package:
-
-* Load the **Sage300UIWizardPackage** solution
-* Select **Build\Build Solution**
-* The package will be successfully built to the output folder specified by the 
-solution configuration (Debug or Release). The **Sage300UIWizardPackage.vsix** is 
-the artifact that will be used to the install the package.
-
-> **Building the package does not install the package**
-
-### How to Install the Sage 300 UI Wizard Package
-
-The following steps illustrate how to install the package:
-
-* The package must first be built as demonstrated in the prior section
-* Locate the **Sage300UIWizardPackage.vsix** file and run this file
-* Select **Yes** to install the plug-in
-
-> **If the package is already installed, it must be uninstalled first**
-
-### How to Uninstall the Sage 300 UI Wizard Package
-
-The following steps illustrate how to uninstall the package from Visual Studio:
-
-* Load Visual Studio
-* Select **Tools\Extensions and Updates…**
-* Search for and select the **Sage 300 UI Wizard Package**
-* Select the **Uninstall** button
-* Select **Yes** to confirm uninstallation of the package
-* Select **Yes** to re-start Visual Studio
-* The package has been uninstalled
-
-> **This step is only required if the package is installed**
-
-### How to Run the Sage 300 UI Wizard Package in Debug Mode
-
-The following steps illustrate how to run the package in debug mode from within Visual Studio:
-
-* Load the **Sage300MenuExtension** solution
-  *	This a solution which contains both wizard projects and other information to allow 
-the Visual Studio plug-in to be debugged
-* Right-Click on the **Sage300MenuExtension** project in order to display the 
-properties page for this project
-* Select the **Debug** Tab to display the properties for debugging
-* In the **Start Action** section, select the **Start external program** option and enter 
-the following information into the textbox: 
-  *	C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe
-
-> Location and version of **devenv.exe** may be different than what is specified above 
-based upon Version of Visual Studio and installation location
-
-* In the **Start Options** section, enter the following information into the **Command line arguments** textbox:
-  *	/rootsuffix Exp
-* Run the solution to start debugging!
+Please refer to the **README** files in the **bin\wizards** and **src\wizards** folders for details
+on topics such as building, installing, uninstalling, and debugging of the wizards.
 
 ## License
 

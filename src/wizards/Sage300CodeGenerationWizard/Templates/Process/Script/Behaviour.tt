@@ -1,0 +1,361 @@
+﻿<# /* The MIT License (MIT) */ #>
+<# /* Copyright (c) 1994-2022 The Sage Group plc or its licensors.  All rights reserved. */ #>
+<# /* */ #>
+<# /* Permission is hereby granted, free of charge, to any person obtaining a copy of */ #>
+<# /* this software and associated documentation files (the "Software"), to deal in */ #>
+<# /* the Software without restriction, including without limitation the rights to use, */ #>
+<# /* copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the */ #>
+<# /* Software, and to permit persons to whom the Software is furnished to do so, */ #>
+<# /* subject to the following conditions: */ #>
+<# /* */ #>
+<# /* The above copyright notice and this permission notice shall be included in all */ #>
+<# /* copies or substantial portions of the Software. */ #>
+<# /* */ #>
+<# /* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, */ #>
+<# /* INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A */ #>
+<# /* PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT */ #>
+<# /* HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF */ #>
+<# /* CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE */ #>
+<# /* OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */ #>
+<#@ template language="C#" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ parameter type="Sage.CA.SBS.ERP.Sage300.CodeGenerationWizard.BusinessView" name="view" #>
+<#@ parameter type="Sage.CA.SBS.ERP.Sage300.CodeGenerationWizard.Settings" name="settings" #>
+<#
+    // Locals
+    var entityName = view.Properties[BusinessView.Constants.EntityName];
+    var localEntityName = entityName.Substring(0, 1).ToLower() + entityName.Substring(1);
+    var moduleId = view.Properties[BusinessView.Constants.ModuleId].ToLower();
+    var moduleIdUpper = view.Properties[BusinessView.Constants.ModuleId];
+    var copyright = settings.Copyright;
+    var snippet = new StringBuilder();
+#>
+/* <#=copyright#> */
+
+// Enable the following commented line to enable TypeScript static type checking
+// @ts-check
+
+"use strict";
+
+var <#=localEntityName#>UI = <#=localEntityName#>UI || {}
+
+<#=localEntityName#>UI = {
+    <#=localEntityName#>Model: {},
+    computedProperties: [],
+
+    /**
+    * @name init
+    * @description Initialize the controls and apply kendo bindings
+    * @namespace <#=localEntityName#>UI
+    * @public
+    */
+    init: () => {     
+        // Initialize the controls and apply kendo bindings 
+        <#=localEntityName#>UI.initKendoBindings();          
+        <#=localEntityName#>UI.initGrids();
+        <#=localEntityName#>UI.initTabs();
+        <#=localEntityName#>UI.initFinders();
+        <#=localEntityName#>UI.initButtons();
+        <#=localEntityName#>UI.initNumericTextboxes();
+        <#=localEntityName#>UI.initTextboxes();
+        <#=localEntityName#>UI.initTimePickers();
+        <#=localEntityName#>UI.initCheckBoxes();
+        <#=localEntityName#>UI.initBlur();
+        <#=localEntityName#>UI.initProcessUI();
+        ko.applyBindings(<#=localEntityName#>UI.<#=localEntityName#>Model);
+    },
+    
+    /**
+     * @name initKendoBindings
+     * @description Initialize the Kendo bindings
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initKendoBindings: () => {
+        <#=localEntityName#>UI.<#=localEntityName#>Model = ko.mapping.fromJS(<#=entityName#>ViewModel);       
+        <#=moduleId#><#=entityName#>KoExtn.<#=moduleId#><#=entityName#>ModelExtension(<#=localEntityName#>UI.<#=localEntityName#>Model);
+    },
+
+    /**
+     * @name initGrids
+     * @description Initialize the grids, if any
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initGrids: () => {
+
+    },
+
+    /**
+     * @name initTabs
+     * @description Initialize the tabs, if any
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initTabs: () => {
+
+    },
+
+    /**
+     * @name initFinders
+     * @description Initialize all of the finders on the page, if any
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initFinders: () => {
+<#
+    // Create code for finder
+    snippet = new StringBuilder();
+    SnippetHelper.FinderJavaScript(8, settings, snippet, localEntityName);
+    if (!string.IsNullOrEmpty(snippet.ToString()))
+    {
+        WriteLine(snippet.ToString());
+    }
+#>
+    },
+
+     /**
+     * @name initNumericTextboxes
+     * @description Initialize the numeric textboxes, if any
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initNumericTextboxes: () => {
+<#
+    // Create code for init numeric textboxes
+    snippet = new StringBuilder();
+    SnippetHelper.InitNumericTextboxesJavaScript(8, settings, snippet, view);
+    if (!string.IsNullOrEmpty(snippet.ToString()))
+    {
+        WriteLine(snippet.ToString());
+    }
+#>
+    },
+
+    /**
+     * @name initCheckBoxes
+     * @description Initialize the click handlers for check boxes, if any
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initCheckBoxes: () => {
+
+    },
+    
+    /**
+     * @name initBlur
+     * @description Initialize the onChange handlers for various controls, if needed
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initBlur: () => {
+
+    },    
+
+    /**
+     * @name initTextboxes
+     * @description Initialize the Kendo text boxes, if needed
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initTextboxes: () => {
+<#
+    // Create code for init textboxes
+    snippet = new StringBuilder();
+    SnippetHelper.InitTextboxesJavaScript(8, settings, snippet, entityName);
+    if (!string.IsNullOrEmpty(snippet.ToString()))
+    {
+        WriteLine(snippet.ToString());
+    }
+#>
+    },
+
+    /**
+     * @name initTimePickers
+     * @description Initialize the time pickers, if any
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initTimePickers: () => {
+<#
+    // Create code for init timepickers
+    snippet = new StringBuilder();
+    SnippetHelper.InitTimePickersJavaScript(8, settings, snippet, localEntityName, view);
+    if (!string.IsNullOrEmpty(snippet.ToString()))
+    {
+        WriteLine(snippet.ToString());
+    }
+#>
+    },
+    
+    /**
+     * @name initButtons
+     * @description Initialize the button click handlers
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initButtons: () => {
+        $("#btnProcess").click((e) => {
+            sg.utls.SyncExecute(<#=localEntityName#>UI.process);
+        });
+<#
+    // Create code for buttons, if any
+    snippet = new StringBuilder();
+    SnippetHelper.InitButtonsJavaScript(8, settings, snippet);
+    if (!string.IsNullOrEmpty(snippet.ToString()))
+    {
+        WriteLine(snippet.ToString());
+    }
+#>
+
+    },
+    
+    /**
+     * @name process
+     * @description Handler for the process button
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    process: () => {
+        sg.utls.isProcessRunning = true;
+        let processUrl = sg.utls.url.buildUrl("<#=moduleIdUpper#>", "<#=entityName#>", "Process");
+        
+        let isChecked = false;
+
+        if (!isChecked) {
+            // Do not process
+            sg.utls.showMessageInfo(sg.utls.msgType.ERROR, <#=localEntityName#>Resources.NoProcessingOption);
+            sg.utls.isProcessRunning = false;
+        }
+
+        // Check if form is valid
+        if ($("#frm<#=entityName#>").valid() && sg.utls.isProcessRunning) {
+            // Check Validations
+            if (<#=localEntityName#>UI.Validation()) {
+                $("#message").empty();
+                sg.utls.clearValidations("frm<#=entityName#>");
+                sg.utls.isProcessRunning = true;
+                let data = { model: ko.mapping.toJS(<#=localEntityName#>UI.<#=localEntityName#>Model, <#=localEntityName#>UI.computedProperties) };
+                sg.utls.ajaxPost(processUrl, data, onSuccess.process)
+            }
+        }
+    },
+    
+    /**
+     * @name initProcessUI
+     * @description
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    initProcessUI: () => {
+        let progressUrl = sg.utls.url.buildUrl("<#=moduleIdUpper#>", "<#=entityName#>", "Progress");
+        let cancelUrl = sg.utls.url.buildUrl("<#=moduleIdUpper#>", "<#=entityName#>", "Cancel");
+        window.progressUI.init(progressUrl, cancelUrl, <#=localEntityName#>UI.<#=localEntityName#>Model, screenName, onSuccess.onProcessComplete);
+    },
+
+    /**
+     * @name Validation
+     * @description Page validator
+     * @namespace <#=localEntityName#>UI
+     * @public
+     */
+    Validation: () => {
+        let errorRangeMessage = "";
+        let inputValid = true;
+
+        if (!inputValid) {
+            if (errorRangeMessage !== "") {
+                sg.utls.showMessageInfo(sg.utls.msgType.ERROR, jQuery.validator.format(<#=localEntityName#>Resources.ErrorFromToValueMessage, errorRangeMessage));
+            } else if (errorMessage !== "") {
+                sg.utls.showMessageInfo(sg.utls.msgType.ERROR, errorMessage);
+            }
+        }
+
+        return inputValid;
+    }
+
+};
+
+// Callbacks
+var onSuccess = {
+    /**
+    * @name process
+    * @description Process success
+    * @namespace onSuccess
+    * @public
+    * 
+    * @param {object} result - JSON result payload
+    */
+    process: (jsonResult) => {
+        if (jsonResult.UserMessage.IsSuccess) {
+            let model = <#=localEntityName#>UI.<#=localEntityName#>Model;
+            window.ko.mapping.fromJS(jsonResult.WorkflowInstanceId, {}, model.WorkflowInstanceId);
+            window.progressUI.progress();
+        } else {
+            sg.utls.showMessage(jsonResult);
+        }
+    },
+
+    /**
+    * @name onProcessComplete
+    * @description
+    * @namespace onSuccess
+    * @public
+    * 
+    * @param {object} result - The result of the operation
+    */
+    onProcessComplete: (result) => {
+        if (result.ProcessResult.Results.length <= 0) {
+            $("#processingResultGrid").hide();
+            let errorMessage = <#=localEntityName#>Resources.ProcessingComplete;
+            sg.utls.showMessageInfoInCustomDivWithoutClose(sg.utls.msgType.INFO, errorMessage, 'messageDiv');
+        }
+    },
+};
+
+// Finder success method
+var onFinderSuccess = {
+};
+
+// Utility
+var <#=localEntityName#>Utility = {   
+    /**
+    * @name checkIsDirty
+    * @description If the model data has changed, display confirmation dialog box
+    * @namespace <#=localEntityName#>Utility
+    * @public
+    * 
+    * @param {object} yesFunctionToCall - Callback for Yes
+    * @param {object} noFunctionToCall - Callback for No
+    */
+    checkIsDirty: (yesFunctionToCall, noFunctionToCall) => {
+        if (<#=localEntityName#>UI.<#=localEntityName#>Model.IsKo<#=entityName#>Dirty && <#=localEntityName#>UI.<#=localEntityName#>Model.IsKo<#=entityName#>Dirty.isDirty()) {
+            sg.utls.showKendoConfirmationDialog(
+                () => { // Yes
+                    yesFunctionToCall.call();
+                },
+                () => { // No
+                    noFunctionToCall.call();
+                },
+                $.validator.format(globalResource.SaveConfirm));
+        } else {
+            yesFunctionToCall.call();
+        }
+    },
+};
+
+// UI Callbacks
+var <#=localEntityName#>UISuccess = {   
+
+};
+
+// Finder Cancel method
+var onFinderCancel = {
+
+};
+
+// Initial Entry
+$(() => {
+    <#=localEntityName#>UI.init();
+});

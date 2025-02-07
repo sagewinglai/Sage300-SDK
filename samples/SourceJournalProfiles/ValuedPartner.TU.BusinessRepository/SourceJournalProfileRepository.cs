@@ -1,5 +1,5 @@
 // The MIT License (MIT) 
-// Copyright (c) 1994-2016 The Sage Group plc or its licensors.  All rights reserved.
+// Copyright (c) 1994-2018 The Sage Group plc or its licensors.  All rights reserved.
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy of 
 // this software and associated documentation files (the "Software"), to deal in 
@@ -380,7 +380,6 @@ namespace ValuedPartner.TU.BusinessRepository
         private void CreateBusinessEntitiesInternal()
         {
             _businessEntity = OpenEntity(SourceJournalProfile.EntityName);
-            _businessEntity.Compose(new[] { _businessEntity.View });
         }
 
         #endregion

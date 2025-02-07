@@ -1,0 +1,8 @@
+<bootstrapper>
+  <assemblies>
+    <add assembly="$companynamespace$.$applicationid$.*.dll" />
+  </assemblies>
+  <menuresx>
+    <add assembly="$companynamespace$.$applicationid$.Resources" name="MenuResx" />
+  </menuresx>
+</bootstrapper>

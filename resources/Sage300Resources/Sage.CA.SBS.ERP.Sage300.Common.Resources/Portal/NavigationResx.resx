@@ -1,0 +1,2219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdministrativeServices" xml:space="preserve">
+    <value>Administrative Services</value>
+  </data>
+  <data name="AP_Common_RecurringPayables" xml:space="preserve">
+    <value>Recurring Payables</value>
+  </data>
+  <data name="AP_PeriodicProcessing" xml:space="preserve">
+    <value>A/P Periodic Processing</value>
+  </data>
+  <data name="AP_PeriodicProcessing_T5028CPRSElectronicFiling" xml:space="preserve">
+    <value>T5018(CPRS) Electronic Filing</value>
+  </data>
+  <data name="AP_Processing_CreateRecPayableBatch" xml:space="preserve">
+    <value>Create Recurring Payable Batch</value>
+  </data>
+  <data name="AP_Setup" xml:space="preserve">
+    <value>A/P Setup</value>
+  </data>
+  <data name="AP_Setup_1099CPRSCodes" xml:space="preserve">
+    <value>1099/CPRS Codes</value>
+  </data>
+  <data name="AP_Setup_DistributionSets" xml:space="preserve">
+    <value>Distribution Sets</value>
+  </data>
+  <data name="AP_Setup_PaymentSelectionCodes" xml:space="preserve">
+    <value>Payment Selection Codes</value>
+  </data>
+  <data name="AP_TransactionReports" xml:space="preserve">
+    <value>A/P Transaction Reports</value>
+  </data>
+  <data name="AP_TransactionReports_VendorTransactions" xml:space="preserve">
+    <value>Vendor Transactions</value>
+  </data>
+  <data name="AP_Transactions" xml:space="preserve">
+    <value>A/P Transactions</value>
+  </data>
+  <data name="AP_Transactions_ControlPayments" xml:space="preserve">
+    <value>Control Payments</value>
+  </data>
+  <data name="AP_Transactions_CreatePaymentBatch" xml:space="preserve">
+    <value>Create Payment Batch</value>
+  </data>
+  <data name="AP_Transactions_PaymentBatchList" xml:space="preserve">
+    <value>Payment Batch List</value>
+  </data>
+  <data name="AP_Transactions_PaymentEntry" xml:space="preserve">
+    <value>Payment Entry</value>
+  </data>
+  <data name="AP_Transactions_PaymentInquiry" xml:space="preserve">
+    <value>Payment Inquiry</value>
+  </data>
+  <data name="AP_Transactions_PrintCheques" xml:space="preserve">
+    <value>Print Checks</value>
+  </data>
+  <data name="AP_TransReports_AgedCashRequirements" xml:space="preserve">
+    <value>Aged Cash Requirements</value>
+  </data>
+  <data name="AP_TransReports_AgedPayables" xml:space="preserve">
+    <value>Aged Payables</value>
+  </data>
+  <data name="AP_TransReports_CheckRegister" xml:space="preserve">
+    <value>Check Register</value>
+  </data>
+  <data name="AP_VendorGroups" xml:space="preserve">
+    <value>Vendor Groups</value>
+  </data>
+  <data name="AP_VendorReports" xml:space="preserve">
+    <value>A/P Vendor Reports</value>
+  </data>
+  <data name="AP_VendorReports_LettersLabels" xml:space="preserve">
+    <value>Letters/Labels</value>
+  </data>
+  <data name="AP_VendorReports_Print10991096Form" xml:space="preserve">
+    <value>1099 Filing</value>
+  </data>
+  <data name="AP_VendorReports_PrintT5018CPRSForm" xml:space="preserve">
+    <value>Print T5018 (CPRS) Forms</value>
+  </data>
+  <data name="AP_Vendors" xml:space="preserve">
+    <value>A/P Vendors</value>
+  </data>
+  <data name="AP_Vendors_1099CPRSInquiry" xml:space="preserve">
+    <value>1099/CPRS Inquiry</value>
+  </data>
+  <data name="AP_Vendors_1099ElectronicFiling" xml:space="preserve">
+    <value>1099 Electronic Filing</value>
+  </data>
+  <data name="AP_Vendors_VendorActivity" xml:space="preserve">
+    <value>Vendor Activity</value>
+  </data>
+  <data name="AP_Vendors_Vendors" xml:space="preserve">
+    <value>Vendors</value>
+  </data>
+  <data name="AR_CustomerReports" xml:space="preserve">
+    <value>A/R Customer Reports</value>
+  </data>
+  <data name="AR_Customers" xml:space="preserve">
+    <value>A/R Customers</value>
+  </data>
+  <data name="AR_CustomersReports_Labels" xml:space="preserve">
+    <value>Labels</value>
+  </data>
+  <data name="AR_CustomersReports_RecurringCharges" xml:space="preserve">
+    <value>Recurring Charges</value>
+  </data>
+  <data name="AR_CustomersReports_ShipToLocations" xml:space="preserve">
+    <value>Ship-To Locations</value>
+  </data>
+  <data name="AR_CustomersReports_StatementsLettersLabels" xml:space="preserve">
+    <value>Statements/Letters/Labels</value>
+  </data>
+  <data name="AR_Customers_CustomerGroups" xml:space="preserve">
+    <value>Customer Groups</value>
+  </data>
+  <data name="AR_Customers_Customers" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="AR_NationalAccounts" xml:space="preserve">
+    <value>National Accounts</value>
+  </data>
+  <data name="AR_PeriodicProcessing" xml:space="preserve">
+    <value>A/R Periodic Processing</value>
+  </data>
+  <data name="AR_Processing_CreateInterestBatch" xml:space="preserve">
+    <value>Create Interest Batch</value>
+  </data>
+  <data name="AR_Setup" xml:space="preserve">
+    <value>A/R Setup</value>
+  </data>
+  <data name="AR_Setup_BillingCycles" xml:space="preserve">
+    <value>Billing Cycles</value>
+  </data>
+  <data name="AR_Setup_CommentTypes" xml:space="preserve">
+    <value>Comment Types</value>
+  </data>
+  <data name="AR_Setup_DunningMessages" xml:space="preserve">
+    <value>Dunning Messages</value>
+  </data>
+  <data name="AR_Setup_InterestProfiles" xml:space="preserve">
+    <value>Interest Profiles</value>
+  </data>
+  <data name="AR_Setup_Salespersons" xml:space="preserve">
+    <value>Salespersons</value>
+  </data>
+  <data name="AR_TransactionReports" xml:space="preserve">
+    <value>A/R Transaction Reports</value>
+  </data>
+  <data name="AR_TransactionReports_ItemSalesHistory" xml:space="preserve">
+    <value>Item Sales History</value>
+  </data>
+  <data name="AR_Transactions" xml:space="preserve">
+    <value>A/R Transactions</value>
+  </data>
+  <data name="AR_Transactions_ReceiptBatchList" xml:space="preserve">
+    <value>Receipt Batch List</value>
+  </data>
+  <data name="AR_TransReports_AgedRetainage" xml:space="preserve">
+    <value>Aged Retainage</value>
+  </data>
+  <data name="AR_TransReports_AgedTrialBalance" xml:space="preserve">
+    <value>Aged Trial Balance</value>
+  </data>
+  <data name="AR_TransReports_CustomerTransactions" xml:space="preserve">
+    <value>Customer Transactions</value>
+  </data>
+  <data name="AS_DataIntegrity" xml:space="preserve">
+    <value>Data Integrity</value>
+  </data>
+  <data name="AS_RestartMaintenance" xml:space="preserve">
+    <value>Restart Maintenance</value>
+  </data>
+  <data name="AS_SecurityGroups" xml:space="preserve">
+    <value>Security Groups</value>
+  </data>
+  <data name="AS_UserAuthorizations" xml:space="preserve">
+    <value>User Authorizations</value>
+  </data>
+  <data name="AS_UserAuthorizationsReport" xml:space="preserve">
+    <value>User Authorizations Report</value>
+  </data>
+  <data name="Bank_PeriodicProcessing" xml:space="preserve">
+    <value>Bank Periodic Processing</value>
+  </data>
+  <data name="Bank_PeriodicProcessing_ClearHistory" xml:space="preserve">
+    <value>Clear History</value>
+  </data>
+  <data name="Bank_Setup" xml:space="preserve">
+    <value>Bank Setup</value>
+  </data>
+  <data name="Bank_Transactions" xml:space="preserve">
+    <value>Bank Transactions</value>
+  </data>
+  <data name="Bank_TransReports" xml:space="preserve">
+    <value>Bank Transaction Reports</value>
+  </data>
+  <data name="Bank_TransReports_BankEntriesPostingJournal" xml:space="preserve">
+    <value>Bank Entries Posting Journal</value>
+  </data>
+  <data name="Bank_TransReports_BankReconciliation" xml:space="preserve">
+    <value>Bank Reconciliation</value>
+  </data>
+  <data name="Bank_TransReports_DepositRegister" xml:space="preserve">
+    <value>Deposit Register</value>
+  </data>
+  <data name="Bank_TransReports_DepositStatus" xml:space="preserve">
+    <value>Deposits Status</value>
+  </data>
+  <data name="Bank_TransReports_PaymentRegister" xml:space="preserve">
+    <value>Check/Payment Register</value>
+  </data>
+  <data name="Bank_TransReports_ReconciliationPostingJournal" xml:space="preserve">
+    <value>Reconciliation Posting Journal</value>
+  </data>
+  <data name="Bank_TransReports_ReconciliationStatus" xml:space="preserve">
+    <value>Reconciliation Status</value>
+  </data>
+  <data name="Bank_TransReports_TransferPostingJournal" xml:space="preserve">
+    <value>Transfer Posting Journal</value>
+  </data>
+  <data name="Bank_TransReports_WithdrawStatus" xml:space="preserve">
+    <value>Withdrawals Status</value>
+  </data>
+  <data name="Bank_Trans_BankEntry" xml:space="preserve">
+    <value>Bank Entry</value>
+  </data>
+  <data name="Bank_Trans_ImportOFXStatements" xml:space="preserve">
+    <value>Import OFX Statements</value>
+  </data>
+  <data name="Bank_Trans_PostEntries" xml:space="preserve">
+    <value>Post Entries</value>
+  </data>
+  <data name="Bank_Trans_PostReconciliation" xml:space="preserve">
+    <value>Post Reconciliation</value>
+  </data>
+  <data name="Bank_Trans_ReconcileOFXStatement" xml:space="preserve">
+    <value>Reconcile E-Statements</value>
+  </data>
+  <data name="Bank_Trans_ReconcileStatements" xml:space="preserve">
+    <value>Reconcile Statements</value>
+  </data>
+  <data name="Bank_Trans_ReverseTrans" xml:space="preserve">
+    <value>Reverse Transactions</value>
+  </data>
+  <data name="Bank_Trans_Transfer" xml:space="preserve">
+    <value>Bank Transfers</value>
+  </data>
+  <data name="Bank_Trans_TransHistoryInquiry" xml:space="preserve">
+    <value>Transaction History Inquiry</value>
+  </data>
+  <data name="CommonServices" xml:space="preserve">
+    <value>Common Services</value>
+  </data>
+  <data name="Common_BatchListing" xml:space="preserve">
+    <value>Batch Listing</value>
+  </data>
+  <data name="Common_CreateGLBatch" xml:space="preserve">
+    <value>Create G/L Batch</value>
+  </data>
+  <data name="Common_Inquiry" xml:space="preserve">
+    <value>Inquiry</value>
+  </data>
+  <data name="Common_Invoices" xml:space="preserve">
+    <value>Invoices</value>
+  </data>
+  <data name="Common_OptionalFields" xml:space="preserve">
+    <value>Optional Fields</value>
+  </data>
+  <data name="Common_Receipts" xml:space="preserve">
+    <value>Receipts</value>
+  </data>
+  <data name="Common_Report_TransactionListing" xml:space="preserve">
+    <value>Transactions Listing</value>
+  </data>
+  <data name="Common_Setup_AccountSets" xml:space="preserve">
+    <value>Account Sets</value>
+  </data>
+  <data name="Common_Setup_DistributionCodes" xml:space="preserve">
+    <value>Distribution Codes</value>
+  </data>
+  <data name="Common_Setup_EmailMessages" xml:space="preserve">
+    <value>Email Messages</value>
+  </data>
+  <data name="Common_Setup_GLIntegration" xml:space="preserve">
+    <value>G/L Integration</value>
+  </data>
+  <data name="Common_Setup_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Common_Setup_PaymentCodes" xml:space="preserve">
+    <value>Payment Codes</value>
+  </data>
+  <data name="Common_Setup_SegmentCodes" xml:space="preserve">
+    <value>Segment Codes</value>
+  </data>
+  <data name="Common_Setup_Terms" xml:space="preserve">
+    <value>Terms</value>
+  </data>
+  <data name="Common_TransactionReports_PostingErrors" xml:space="preserve">
+    <value>Posting Errors</value>
+  </data>
+  <data name="Common_Transactions_InvoiceBatchList" xml:space="preserve">
+    <value>Invoice Batch List</value>
+  </data>
+  <data name="Common_Transactions_InvoiceEntry" xml:space="preserve">
+    <value>Invoice Entry</value>
+  </data>
+  <data name="Common_Transactions_PostBatches" xml:space="preserve">
+    <value>Post Batches</value>
+  </data>
+  <data name="Common_Transactions_ReceiptEntry" xml:space="preserve">
+    <value>Receipt Entry</value>
+  </data>
+  <data name="Common_YearEnd" xml:space="preserve">
+    <value>Year End</value>
+  </data>
+  <data name="CS_CompanyProfile" xml:space="preserve">
+    <value>Company Profile</value>
+  </data>
+  <data name="CS_FiscalCalendar" xml:space="preserve">
+    <value>Fiscal Calendar</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="CurrencyCodes" xml:space="preserve">
+    <value>Currency Codes</value>
+  </data>
+  <data name="Currency_Rates" xml:space="preserve">
+    <value>Currency Rates</value>
+  </data>
+  <data name="Currency_RateTypes" xml:space="preserve">
+    <value>Currency Rate Types</value>
+  </data>
+  <data name="GL_Accounts" xml:space="preserve">
+    <value>G/L Accounts</value>
+  </data>
+  <data name="GL_Accounts_Accounts" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+  <data name="GL_Accounts_ChartOfAccounts" xml:space="preserve">
+    <value>Chart of Accounts</value>
+  </data>
+  <data name="GL_Common_RecurringEntries" xml:space="preserve">
+    <value>Recurring Entries</value>
+  </data>
+  <data name="GL_Common_SourceCodes" xml:space="preserve">
+    <value>Source Codes</value>
+  </data>
+  <data name="GL_PeriodicProcessing" xml:space="preserve">
+    <value>G/L Periodic Processing</value>
+  </data>
+  <data name="GL_PeriodicProcessing_PeriodEndMaintenance" xml:space="preserve">
+    <value>Period End Maintenance</value>
+  </data>
+  <data name="GL_Processing_CreateNewYear" xml:space="preserve">
+    <value>Create New Year</value>
+  </data>
+  <data name="GL_Processing_CreateRecEntBatch" xml:space="preserve">
+    <value>Create Recurring Entries Batch</value>
+  </data>
+  <data name="GL_Reports" xml:space="preserve">
+    <value>G/L Reports</value>
+  </data>
+  <data name="GL_Reports_TransactionalDetailsOptionalFields" xml:space="preserve">
+    <value>Transaction Details Optional Fields</value>
+  </data>
+  <data name="GL_Reports_TrialBalance" xml:space="preserve">
+    <value>Trial Balance</value>
+  </data>
+  <data name="GL_Setup" xml:space="preserve">
+    <value>G/L Setup</value>
+  </data>
+  <data name="GL_Setup_AccountGroups" xml:space="preserve">
+    <value>Account Groups</value>
+  </data>
+  <data name="GL_Setup_AccountStructures" xml:space="preserve">
+    <value>Account Structures</value>
+  </data>
+  <data name="GL_Transactions" xml:space="preserve">
+    <value> G/L Transactions </value>
+  </data>
+  <data name="GL_Transactions_BatchList" xml:space="preserve">
+    <value>Batch List</value>
+  </data>
+  <data name="GL_Transactions_JournalEntry" xml:space="preserve">
+    <value>Journal Entry</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Module_AccountsPayable" xml:space="preserve">
+    <value>Accounts Payable</value>
+  </data>
+  <data name="Module_AccountsReceivable" xml:space="preserve">
+    <value>Accounts Receivable</value>
+  </data>
+  <data name="Module_GeneralLedger" xml:space="preserve">
+    <value>General Ledger</value>
+  </data>
+  <data name="Module_More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="CNAPortalHelpArticles" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="CNAPortalHelpCenter" xml:space="preserve">
+    <value>Help Center</value>
+  </data>
+  <data name="CNAPortalHelpContactSupport" xml:space="preserve">
+    <value>Contact Support</value>
+  </data>
+  <data name="CNAPortalHelpExploreSage" xml:space="preserve">
+    <value>Feature Tour</value>
+  </data>
+  <data name="CNAPortalHelpGettingStart" xml:space="preserve">
+    <value>Getting Started</value>
+  </data>
+  <data name="CNAPortalHelpPrintReports" xml:space="preserve">
+    <value>Printing Reports</value>
+  </data>
+  <data name="CNAPortalHelpResources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="CNAPortalHelpSageCity" xml:space="preserve">
+    <value>Sage City</value>
+  </data>
+  <data name="CNAPortalHelpSageUniversity" xml:space="preserve">
+    <value>Sage University</value>
+  </data>
+  <data name="CNAPortalHelpSettingHomePageWidgets" xml:space="preserve">
+    <value>Setting Up Home Page Widgets</value>
+  </data>
+  <data name="CNAPortalHelpShareIdeas" xml:space="preserve">
+    <value>Share Your Ideas</value>
+  </data>
+  <data name="CNAPortalHelpWhatNewHere" xml:space="preserve">
+    <value>What's New</value>
+  </data>
+  <data name="Demonstration_ReportDesigner" xml:space="preserve">
+    <value>Demonstration Report Designer</value>
+  </data>
+  <data name="Financial_BalanceSheet" xml:space="preserve">
+    <value>Financial Balance Sheet</value>
+  </data>
+  <data name="Financial_CashFlowSummaryCategory" xml:space="preserve">
+    <value>Financial Cash Flow Summary by Category</value>
+  </data>
+  <data name="Financial_Forecasting" xml:space="preserve">
+    <value>Financial Forecasting</value>
+  </data>
+  <data name="Financial_ForecastingGreen" xml:space="preserve">
+    <value>Financial Forecasting (Green)</value>
+  </data>
+  <data name="Financial_IncomeStatement" xml:space="preserve">
+    <value>Financial Income Statement</value>
+  </data>
+  <data name="Financial_Ratio" xml:space="preserve">
+    <value>Financial Ratios</value>
+  </data>
+  <data name="ExcelFile_DemonstrationReportDesigner" xml:space="preserve">
+    <value>Report Designer S300.xlsx</value>
+  </data>
+  <data name="ExcelFile_FinancialBalanceSheet" xml:space="preserve">
+    <value>Financial Balance Sheet S300.xlsx</value>
+  </data>
+  <data name="ExcelFile_FinancialCashFlowSummaryCategory" xml:space="preserve">
+    <value>Financial Cash Flow Summary by Category S300.xlsx</value>
+  </data>
+  <data name="ExcelFile_FinancialForecasting" xml:space="preserve">
+    <value>Financial Forecasting S300.xlsx</value>
+  </data>
+  <data name="ExcelFile_FinancialForecastingGreen" xml:space="preserve">
+    <value>Financial Forecasting S300 green.xlsx</value>
+  </data>
+  <data name="ExcelFile_FinancialIncomeStatement" xml:space="preserve">
+    <value>Financial Income Statement S300.xlsx</value>
+  </data>
+  <data name="ExcelFile_FinancialRatio" xml:space="preserve">
+    <value>Financial Ratio S300.xlsx</value>
+  </data>
+  <data name="AS_Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="Bank_Banks" xml:space="preserve">
+    <value>Banks</value>
+  </data>
+  <data name="GL_Reports_PostingJournals" xml:space="preserve">
+    <value>Posting Journals</value>
+  </data>
+  <data name="Create_GL_Batch" xml:space="preserve">
+    <value>Create G/L Batch</value>
+  </data>
+  <data name="IC_Day_End_Processing" xml:space="preserve">
+    <value>Day End Processing</value>
+  </data>
+  <data name="Module_InventoryControl" xml:space="preserve">
+    <value>Inventory Control</value>
+  </data>
+  <data name="IC_PriceSalesAnalysisReports" xml:space="preserve">
+    <value>I/C Price/Sales Analysis Reports</value>
+  </data>
+  <data name="IC_PeriodicProcessing" xml:space="preserve">
+    <value>I/C Periodic Processing</value>
+  </data>
+  <data name="IC_Contract_Pricing" xml:space="preserve">
+    <value>Contract Pricing</value>
+  </data>
+  <data name="IC_Setup" xml:space="preserve">
+    <value>I/C Setup</value>
+  </data>
+  <data name="Module_OrderEntry" xml:space="preserve">
+    <value>Order Entry</value>
+  </data>
+  <data name="Module_PurchaseOrders" xml:space="preserve">
+    <value>Purchase Orders</value>
+  </data>
+  <data name="OE_InvoiceAction" xml:space="preserve">
+    <value>Invoice Action</value>
+  </data>
+  <data name="OE_Reports" xml:space="preserve">
+    <value>O/E Analytical Reports</value>
+  </data>
+  <data name="OE_SalesStatistics" xml:space="preserve">
+    <value>Sales Statistics</value>
+  </data>
+  <data name="Common_CreateOEBatch" xml:space="preserve">
+    <value>Create Batch</value>
+  </data>
+  <data name="Common_CreatePOBatch" xml:space="preserve">
+    <value>Create Batch</value>
+  </data>
+  <data name="OE_PeriodicProcessing" xml:space="preserve">
+    <value>O/E Periodic Processing</value>
+  </data>
+  <data name="PO_PeriodicProcessing" xml:space="preserve">
+    <value>P/O Periodic Processing</value>
+  </data>
+  <data name="IC_Selling_Price_Margin_Analysis" xml:space="preserve">
+    <value>Selling Price/Margin Analysis</value>
+  </data>
+  <data name="OE_AgedOrders" xml:space="preserve">
+    <value>Aged Orders</value>
+  </data>
+  <data name="OE_TransactionList" xml:space="preserve">
+    <value>Transaction List</value>
+  </data>
+  <data name="IC_Items_Price_Lists" xml:space="preserve">
+    <value>I/C Items and Price Lists</value>
+  </data>
+  <data name="IC_Manufacturers_Item" xml:space="preserve">
+    <value>Manufacturers' Items</value>
+  </data>
+  <data name="IC_Segment_Code" xml:space="preserve">
+    <value>Segment Codes</value>
+  </data>
+  <data name="IC_Account_Sets" xml:space="preserve">
+    <value>Account Sets</value>
+  </data>
+  <data name="IC_Item_Structures" xml:space="preserve">
+    <value>Item Structures</value>
+  </data>
+  <data name="IC_Optional_Fields" xml:space="preserve">
+    <value>Optional Fields</value>
+  </data>
+  <data name="IC_Statistics_Inquiries" xml:space="preserve">
+    <value>I/C Statistics and Inquiries</value>
+  </data>
+  <data name="IC_Transaction_Statistics" xml:space="preserve">
+    <value>Transaction Statistics</value>
+  </data>
+  <data name="IC_Weight_Units_of_Measure" xml:space="preserve">
+    <value>Weight Units of Measure</value>
+  </data>
+  <data name="IC_Item" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="IC_Units_of_Measure" xml:space="preserve">
+    <value>Units of Measure</value>
+  </data>
+  <data name="IC_Categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="IC_Locations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="IC_Price_List_Codes" xml:space="preserve">
+    <value>Price List Codes</value>
+  </data>
+  <data name="IC_Vendor_Details" xml:space="preserve">
+    <value>Vendor Details</value>
+  </data>
+  <data name="OE_Setup" xml:space="preserve">
+    <value>O/E Setup</value>
+  </data>
+  <data name="IC_Customer_Details" xml:space="preserve">
+    <value>Customer Details</value>
+  </data>
+  <data name="IC_Inventory_Counts" xml:space="preserve">
+    <value>Inventory Counts</value>
+  </data>
+  <data name="IC_Physical_Inventory" xml:space="preserve">
+    <value>I/C Physical Inventory</value>
+  </data>
+  <data name="IC_Receipt" xml:space="preserve">
+    <value>Receipts</value>
+  </data>
+  <data name="IC_Shipments" xml:space="preserve">
+    <value>Shipments</value>
+  </data>
+  <data name="IC_Transactions" xml:space="preserve">
+    <value>I/C Transactions</value>
+  </data>
+  <data name="OE_Optional_Fields" xml:space="preserve">
+    <value>Optional Fields</value>
+  </data>
+  <data name="PO_Analytical_Reports" xml:space="preserve">
+    <value>P/O Analytical Reports</value>
+  </data>
+  <data name="PO_Clear_History" xml:space="preserve">
+    <value>Clear History</value>
+  </data>
+  <data name="IC_Alternate_Items" xml:space="preserve">
+    <value>Alternate Items</value>
+  </data>
+  <data name="IC_Setup_Reports" xml:space="preserve">
+    <value>I/C Setup Reports</value>
+  </data>
+  <data name="IC_Reorder" xml:space="preserve">
+    <value> Reorder</value>
+  </data>
+  <data name="IC_Stock_Control_Reports" xml:space="preserve">
+    <value>I/C Stock Control Reports</value>
+  </data>
+  <data name="PO_Payables_Clearing_Audit_List_Report" xml:space="preserve">
+    <value>Payables Clearing Audit List</value>
+  </data>
+  <data name="IC_Price_Lists" xml:space="preserve">
+    <value>Price Lists</value>
+  </data>
+  <data name="OE_Salesperson_Commissions" xml:space="preserve">
+    <value>Salesperson Commissions</value>
+  </data>
+  <data name="IC_Aged_Inventory" xml:space="preserve">
+    <value>Aged Inventory</value>
+  </data>
+  <data name="IC_Inventory_Movement" xml:space="preserve">
+    <value>Inventory Movement</value>
+  </data>
+  <data name="IC_Inventory_Worksheet" xml:space="preserve">
+    <value>Inventory Worksheet</value>
+  </data>
+  <data name="IC_Posting_Journals" xml:space="preserve">
+    <value>Posting Journals</value>
+  </data>
+  <data name="OE_Posting_Journals" xml:space="preserve">
+    <value>Posting Journals</value>
+  </data>
+  <data name="OE_Sales_History" xml:space="preserve">
+    <value>Sales History</value>
+  </data>
+  <data name="OE_Statistics_and_Inquiries" xml:space="preserve">
+    <value>O/E Statistics and Inquiries</value>
+  </data>
+  <data name="PO_Optional_Fields" xml:space="preserve">
+    <value>Optional Fields</value>
+  </data>
+  <data name="PO_Posting_Journals" xml:space="preserve">
+    <value>Posting Journals</value>
+  </data>
+  <data name="OE_Templates" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="OE_Order_Entry" xml:space="preserve">
+    <value>Order Entry</value>
+  </data>
+  <data name="OE_Transactions" xml:space="preserve">
+    <value>O/E Transactions</value>
+  </data>
+  <data name="IC_Markup_Analysis" xml:space="preserve">
+    <value>Markup Analysis</value>
+  </data>
+  <data name="IC_Sales_Statistics" xml:space="preserve">
+    <value>Sales Statistics</value>
+  </data>
+  <data name="OE_Forms" xml:space="preserve">
+    <value>O/E Forms</value>
+  </data>
+  <data name="OE_Order_Confirmations" xml:space="preserve">
+    <value>Order Confirmations</value>
+  </data>
+  <data name="OE_Quotes" xml:space="preserve">
+    <value>Quotes</value>
+  </data>
+  <data name="PO_Create_POs_from_IC" xml:space="preserve">
+    <value>Create POs from I/C</value>
+  </data>
+  <data name="PO_Create_Purchase_Orders" xml:space="preserve">
+    <value>P/O Create Purchase Orders</value>
+  </data>
+  <data name="OE_Clear_History" xml:space="preserve">
+    <value>Clear History</value>
+  </data>
+  <data name="PO_Forms" xml:space="preserve">
+    <value>P/O Forms</value>
+  </data>
+  <data name="PO_Purchase_Orders" xml:space="preserve">
+    <value>Purchase Orders</value>
+  </data>
+  <data name="PO_Aged_Purchase_Orders_Report" xml:space="preserve">
+    <value>Aged Purchase Orders </value>
+  </data>
+  <data name="PO_Purchase_Statistics" xml:space="preserve">
+    <value>Purchase Statistics</value>
+  </data>
+  <data name="IC_Transaction_History_Inquiry" xml:space="preserve">
+    <value>Transaction History Inquiry</value>
+  </data>
+  <data name="OE_Miscellaneous_Charges" xml:space="preserve">
+    <value>Miscellaneous Charges</value>
+  </data>
+  <data name="OE_Order_Action" xml:space="preserve">
+    <value>Order Action</value>
+  </data>
+  <data name="OE_Ship_Via_Codes" xml:space="preserve">
+    <value>Ship-Via Codes</value>
+  </data>
+  <data name="PO_Email_Messages" xml:space="preserve">
+    <value>Email Messages</value>
+  </data>
+  <data name="PO_Purchase_History" xml:space="preserve">
+    <value>Purchase History</value>
+  </data>
+  <data name="PO_Purchase_Order_Action" xml:space="preserve">
+    <value>Purchase Order Action</value>
+  </data>
+  <data name="IC_Kitting_Items" xml:space="preserve">
+    <value>Kitting Items</value>
+  </data>
+  <data name="IC_LIFO_FIFO_Inquiry" xml:space="preserve">
+    <value>LIFO/FIFO Inquiry</value>
+  </data>
+  <data name="PO_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="OE_Credit_Debit_Note_Entry" xml:space="preserve">
+    <value>Credit/Debit Note Entry</value>
+  </data>
+  <data name="OE_Email_Messages" xml:space="preserve">
+    <value>Email Messages</value>
+  </data>
+  <data name="PO_Create_POs_from_OE" xml:space="preserve">
+    <value>Create POs from O/E</value>
+  </data>
+  <data name="GL_Transaction" xml:space="preserve">
+    <value>G/L Transactions</value>
+  </data>
+  <data name="IC_ItemValuation" xml:space="preserve">
+    <value>Item Valuation</value>
+  </data>
+  <data name="IC_SlowMovingItems" xml:space="preserve">
+    <value>Slow Moving Items</value>
+  </data>
+  <data name="PO_Create_POs_from_Requisitions" xml:space="preserve">
+    <value>Create POs from Requisitions</value>
+  </data>
+  <data name="IC_StockTransactionsInquiry" xml:space="preserve">
+    <value>Stock Transactions Inquiry</value>
+  </data>
+  <data name="IC_TransactionHistory" xml:space="preserve">
+    <value>Transaction History</value>
+  </data>
+  <data name="PO_PurchaseStatistics" xml:space="preserve">
+    <value>Purchase Statistics</value>
+  </data>
+  <data name="PO_AdditionalCosts" xml:space="preserve">
+    <value>Additional Costs</value>
+  </data>
+  <data name="IC_Item_Pricing" xml:space="preserve">
+    <value>Item Pricing </value>
+  </data>
+  <data name="OE_Invoice" xml:space="preserve">
+    <value>Invoices</value>
+  </data>
+  <data name="OE_Sales_Statistics" xml:space="preserve">
+    <value>Sales Statistics</value>
+  </data>
+  <data name="OE_ShippingLabels" xml:space="preserve">
+    <value>Shipping Labels</value>
+  </data>
+  <data name="PO_Copy_Purchase_Order" xml:space="preserve">
+    <value>Copy Purchase Orders</value>
+  </data>
+  <data name="PO_Credit_Debit_Note_Entry" xml:space="preserve">
+    <value>Credit/Debit Note Entry</value>
+  </data>
+  <data name="IC_PostTransactions" xml:space="preserve">
+    <value>Post Transactions</value>
+  </data>
+  <data name="IC_Transaction_Listing" xml:space="preserve">
+    <value>Transaction Listing</value>
+  </data>
+  <data name="OE_Salesperson_Inquiry" xml:space="preserve">
+    <value>Salesperson Inquiry</value>
+  </data>
+  <data name="IC_Post_Transactions" xml:space="preserve">
+    <value>Post Transactions</value>
+  </data>
+  <data name="IC_Item_Loc_Detail_Qty_Inquiry" xml:space="preserve">
+    <value>Item Location Details Quantity Inquiry</value>
+  </data>
+  <data name="IC_Generate_Inventory_Worksheet" xml:space="preserve">
+    <value>Generate Inventory Worksheet</value>
+  </data>
+  <data name="PO_Purchase_Order_Entry" xml:space="preserve">
+    <value>Purchase Order Entry</value>
+  </data>
+  <data name="IC_Bin_Shelf_Labels" xml:space="preserve">
+    <value>Bin/Shelf Labels</value>
+  </data>
+  <data name="IC_Inventory_Reconciliation" xml:space="preserve">
+    <value>Inventory Reconciliation</value>
+  </data>
+  <data name="IC_Stock_Transactions" xml:space="preserve">
+    <value>Stock Transactions</value>
+  </data>
+  <data name="PO_Invoice_Entry" xml:space="preserve">
+    <value>Invoice Entry</value>
+  </data>
+  <data name="PO_Receipt_Entry" xml:space="preserve">
+    <value>Receipt Entry</value>
+  </data>
+  <data name="IC_Adjustments" xml:space="preserve">
+    <value>Adjustments</value>
+  </data>
+  <data name="IC_Overstocked_Items" xml:space="preserve">
+    <value>Overstocked Items</value>
+  </data>
+  <data name="OE_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="AP_3rd_Level_Transaction_Template" xml:space="preserve">
+    <value>A/P Transactions</value>
+  </data>
+  <data name="AP_4th_Level_Transaction_Template" xml:space="preserve">
+    <value>A/P Transactions</value>
+  </data>
+  <data name="AR_3rd_Level_Transaction_Template" xml:space="preserve">
+    <value>A/R Transactions</value>
+  </data>
+  <data name="AR_4th_Level_Transaction_Template" xml:space="preserve">
+    <value>A/R Transactions</value>
+  </data>
+  <data name="BK_3rd_Level_Transaction_Template" xml:space="preserve">
+    <value>Bank Reconciliation</value>
+  </data>
+  <data name="BK_4th_Level_Transaction_Template" xml:space="preserve">
+    <value>Bank Reconciliation</value>
+  </data>
+  <data name="GL_3rd_Level_Transaction_Template" xml:space="preserve">
+    <value>G/L Transactions</value>
+  </data>
+  <data name="GL_4th_Level_Transaction_Template" xml:space="preserve">
+    <value>G/L Transactions</value>
+  </data>
+  <data name="IC_3rd_Level_Maintain_Template" xml:space="preserve">
+    <value>I/C Maintain Items</value>
+  </data>
+  <data name="IC_3rd_Level_Transaction_Template" xml:space="preserve">
+    <value>I/C Transactions</value>
+  </data>
+  <data name="IC_4th_Level_Maintain_Template" xml:space="preserve">
+    <value>I/C Maintain Items</value>
+  </data>
+  <data name="IC_4th_Level_Transaction_Template" xml:space="preserve">
+    <value>I/C Transactions</value>
+  </data>
+  <data name="OE_3rd_Level_Transaction_Template" xml:space="preserve">
+    <value>O/E Transaction</value>
+  </data>
+  <data name="OE_4th_Level_Transaction_Template" xml:space="preserve">
+    <value>O/E Transaction Template</value>
+  </data>
+  <data name="PO_3rd_Level_Transaction_Template" xml:space="preserve">
+    <value>P/O Transactions</value>
+  </data>
+  <data name="PO_4th_Level_Transaction_Template" xml:space="preserve">
+    <value>P/O Transactions</value>
+  </data>
+  <data name="PO_Receiving_Slips" xml:space="preserve">
+    <value>Receiving Slips</value>
+  </data>
+  <data name="PO_RequisitionEntry" xml:space="preserve">
+    <value>Requisition Entry</value>
+  </data>
+  <data name="PO_Returns" xml:space="preserve">
+    <value>Returns</value>
+  </data>
+  <data name="PO_Return_Entry" xml:space="preserve">
+    <value>Return Entry</value>
+  </data>
+  <data name="PO_Setup" xml:space="preserve">
+    <value>P/O Setup</value>
+  </data>
+  <data name="PO_Shippable_Backorders" xml:space="preserve">
+    <value>Shippable Backorders</value>
+  </data>
+  <data name="PO_Ship_Via_Codes" xml:space="preserve">
+    <value>Ship-Via Codes</value>
+  </data>
+  <data name="PO_Statistics_Inquiries" xml:space="preserve">
+    <value>P/O Statistics and Inquiries</value>
+  </data>
+  <data name="PO_Templates" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="PO_TransactionList" xml:space="preserve">
+    <value>Transaction List</value>
+  </data>
+  <data name="PO_Transactions" xml:space="preserve">
+    <value>P/O Transactions</value>
+  </data>
+  <data name="PO_Vendor_Contract_Costs" xml:space="preserve">
+    <value>Vendor Contract Costs</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="Sage_Intelligence_Go" xml:space="preserve">
+    <value>Sage Intelligence Go!</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="Tax_Reports" xml:space="preserve">
+    <value>Tax Reports</value>
+  </data>
+  <data name="Tax_Services" xml:space="preserve">
+    <value>Tax Services</value>
+  </data>
+  <data name="Tax_TaxAuthorities" xml:space="preserve">
+    <value>Tax Authorities</value>
+  </data>
+  <data name="Tax_TaxClasses" xml:space="preserve">
+    <value>Tax Classes</value>
+  </data>
+  <data name="Tax_TaxGroups" xml:space="preserve">
+    <value>Tax Groups</value>
+  </data>
+  <data name="Tax_TaxRates" xml:space="preserve">
+    <value>Tax Rates</value>
+  </data>
+  <data name="Tax_PeriodicProcessing" xml:space="preserve">
+    <value>Tax Periodic Processing</value>
+  </data>
+  <data name="Tax_TaxTracking" xml:space="preserve">
+    <value>Tax Tracking</value>
+  </data>
+  <data name="Tax_ClearHistory" xml:space="preserve">
+    <value>Clear History</value>
+  </data>
+  <data name="Templates" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="Visual_Process_Flow_Top" xml:space="preserve">
+    <value>VPF</value>
+  </data>
+  <data name="YP_Setup_Options" xml:space="preserve">
+    <value>Payment Processing Options</value>
+  </data>
+  <data name="YP_Setup_ProcessingCodes" xml:space="preserve">
+    <value>Payment Processing Codes</value>
+  </data>
+  <data name="IC_Item_Status" xml:space="preserve">
+    <value>Item Status</value>
+  </data>
+  <data name="IC_Physical_Inventory_Quantities" xml:space="preserve">
+    <value>Physical Inventory Quantities</value>
+  </data>
+  <data name="IC_Reorder_Quantities" xml:space="preserve">
+    <value>Reorder Quantities</value>
+  </data>
+  <data name="IC_Update_Item_Pricing" xml:space="preserve">
+    <value>Update Item Pricing</value>
+  </data>
+  <data name="IC_Item_Labels" xml:space="preserve">
+    <value>Item Labels</value>
+  </data>
+  <data name="OE_Picking_Slips" xml:space="preserve">
+    <value>Picking Slips</value>
+  </data>
+  <data name="PO_Pending_Receipts_Inquiry" xml:space="preserve">
+    <value>Pending Receipts Inquiry</value>
+  </data>
+  <data name="IC_Post_Inventory_Reconciliation" xml:space="preserve">
+    <value>Post Inventory Reconciliation</value>
+  </data>
+  <data name="PO_Requisitions" xml:space="preserve">
+    <value>Requisitions</value>
+  </data>
+  <data name="OE_CreditDebit_Notes" xml:space="preserve">
+    <value>Credit/Debit Notes</value>
+  </data>
+  <data name="IC_Transfer_Slips" xml:space="preserve">
+    <value>Transfer Slips</value>
+  </data>
+  <data name="IC_Transfers" xml:space="preserve">
+    <value>Transfers</value>
+  </data>
+  <data name="PO_Mailing_Labels" xml:space="preserve">
+    <value>Mailing Labels</value>
+  </data>
+  <data name="OE_Pending_Shipments_Inquiry" xml:space="preserve">
+    <value>Pending Shipments Inquiry</value>
+  </data>
+  <data name="IC_Location_Details" xml:space="preserve">
+    <value>Location Details</value>
+  </data>
+  <data name="IC_Process_Adjustments" xml:space="preserve">
+    <value>Process Adjustments</value>
+  </data>
+  <data name="OE_Copy_Orders" xml:space="preserve">
+    <value>Copy Orders</value>
+  </data>
+  <data name="OE_Current_Orders_Inquiry" xml:space="preserve">
+    <value>Current Orders Inquiry</value>
+  </data>
+  <data name="AP_PeriodicProcessing_Revaluation" xml:space="preserve">
+    <value>Revaluation</value>
+  </data>
+  <data name="AR_PeriodicProcessing_Revaluation" xml:space="preserve">
+    <value>Revaluation</value>
+  </data>
+  <data name="IC_Internal_Usage" xml:space="preserve">
+    <value>Internal Usage</value>
+  </data>
+  <data name="GL_Clear_History" xml:space="preserve">
+    <value>Clear History</value>
+  </data>
+  <data name="AR_Processing_CreateRecurringChargeBatch" xml:space="preserve">
+    <value>Create Recurring Charge Batch</value>
+  </data>
+  <data name="PO_Setup_Reports" xml:space="preserve">
+    <value>P/O Setup Reports</value>
+  </data>
+  <data name="AP_Recurring_Payables" xml:space="preserve">
+    <value>Recurring Payables</value>
+  </data>
+  <data name="AR_Deposit_Slips" xml:space="preserve">
+    <value>Deposit Slips</value>
+  </data>
+  <data name="IC_Warranty_Contract_List" xml:space="preserve">
+    <value>Warranty/Contract List</value>
+  </data>
+  <data name="IC_Current_Transactions_Inquiry" xml:space="preserve">
+    <value>Current Transactions Inquiry</value>
+  </data>
+  <data name="AP_Posting_Journals" xml:space="preserve">
+    <value>Posting Journals</value>
+  </data>
+  <data name="IC_Quarantine_Report" xml:space="preserve">
+    <value>Quarantine</value>
+  </data>
+  <data name="GL_Source_Journal_Profiles" xml:space="preserve">
+    <value>Source Journal Profiles</value>
+  </data>
+  <data name="PO_ReceivingSlips_Article1" xml:space="preserve">
+    <value>About Purchase Order Forms</value>
+  </data>
+  <data name="PO_ReceivingSlips_Article2" xml:space="preserve">
+    <value>Printing Receiving Slips</value>
+  </data>
+  <data name="PO_ReceivingSlips_Screen" xml:space="preserve">
+    <value>P/O Receiving Slips Screen</value>
+  </data>
+  <data name="AP_Batch_Status_Report" xml:space="preserve">
+    <value>Batch Status</value>
+  </data>
+  <data name="AP_Vendor_Groups" xml:space="preserve">
+    <value>Vendor Groups</value>
+  </data>
+  <data name="IC_Serial_Lot_Transactions_Report" xml:space="preserve">
+    <value>Serial/Lot Transactions</value>
+  </data>
+  <data name="IC_Serial_Number_Inquiry" xml:space="preserve">
+    <value>Serial Number Inquiry</value>
+  </data>
+  <data name="AP_Delete_Inactive_Records" xml:space="preserve">
+    <value>Delete Inactive Records</value>
+  </data>
+  <data name="IC_Recall_Report" xml:space="preserve">
+    <value>Recall</value>
+  </data>
+  <data name="GL_Create_Allocation_Batch" xml:space="preserve">
+    <value>Create Allocation Batch</value>
+  </data>
+  <data name="AP_Remit_To_Locations" xml:space="preserve">
+    <value>Remit-To Locations</value>
+  </data>
+  <data name="AR_Batch_Status" xml:space="preserve">
+    <value>Batch Status</value>
+  </data>
+  <data name="IC_Lot_Recalls_Releases" xml:space="preserve">
+    <value>Lot Recalls/Releases</value>
+  </data>
+  <data name="CS_Scheduling" xml:space="preserve">
+    <value>Scheduling</value>
+  </data>
+  <data name="AR_Posting_Journals" xml:space="preserve">
+    <value>Posting Journals</value>
+  </data>
+  <data name="AR_Refund_Batch_List" xml:space="preserve">
+    <value>Refund Batch List</value>
+  </data>
+  <data name="CS_Schedules" xml:space="preserve">
+    <value>Schedules</value>
+  </data>
+  <data name="GL_Source_Codes" xml:space="preserve">
+    <value>Source Codes</value>
+  </data>
+  <data name="IC_Clear_History" xml:space="preserve">
+    <value>Clear History</value>
+  </data>
+  <data name="IC_Copy_Bills_of_Material" xml:space="preserve">
+    <value>Copy Bills of Material</value>
+  </data>
+  <data name="IC_Items_Wizard" xml:space="preserve">
+    <value>Items Wizard</value>
+  </data>
+  <data name="ProjectJobCosting" xml:space="preserve">
+    <value>Project and Job Costing</value>
+  </data>
+  <data name="GL_Revaluation_Codes" xml:space="preserve">
+    <value>Revaluation Codes</value>
+  </data>
+  <data name="IC_Delete_Inactive_Records" xml:space="preserve">
+    <value>Delete Inactive Records</value>
+  </data>
+  <data name="IC_Serial_Lot_Number_List_Report" xml:space="preserve">
+    <value>Serial/Lot Number List</value>
+  </data>
+  <data name="IC_Serial_Lot_Number_Qty_On_Hand_Report" xml:space="preserve">
+    <value>Serial/Lot Number Quantity On Hand</value>
+  </data>
+  <data name="AR_Customer_Groups" xml:space="preserve">
+    <value>Customer Groups</value>
+  </data>
+  <data name="AR_Customer_Inquiry" xml:space="preserve">
+    <value>Customer Inquiry</value>
+  </data>
+  <data name="IC_Lot_Numbers" xml:space="preserve">
+    <value>Lot Numbers</value>
+  </data>
+  <data name="OE_Invoice_Entry" xml:space="preserve">
+    <value>Invoice Entry</value>
+  </data>
+  <data name="AR_Receipt_Inquiry" xml:space="preserve">
+    <value>Receipt Inquiry</value>
+  </data>
+  <data name="AR_Refund_Inquiry" xml:space="preserve">
+    <value>Refund Inquiry</value>
+  </data>
+  <data name="GL_Batch_Status" xml:space="preserve">
+    <value>Batch Status</value>
+  </data>
+  <data name="GL_Fiscal_Set_Comparison" xml:space="preserve">
+    <value>Fiscal Set Comparison</value>
+  </data>
+  <data name="GL_Account_History_Inquiry" xml:space="preserve">
+    <value>Account History Inquiry</value>
+  </data>
+  <data name="IC_Bills_of_Material" xml:space="preserve">
+    <value>Bills of Material</value>
+  </data>
+  <data name="IC_Assemblies" xml:space="preserve">
+    <value>Assemblies/Disassemblies</value>
+  </data>
+  <data name="IC_Copy_Item_Pricing" xml:space="preserve">
+    <value>Copy Item Pricing</value>
+  </data>
+  <data name="AP_Create_Retainage_Batch" xml:space="preserve">
+    <value>Create Retainage Batch</value>
+  </data>
+  <data name="AR_Create_Retainage_Batch" xml:space="preserve">
+    <value>Create Retainage Batch</value>
+  </data>
+  <data name="AR_Document_Inquiry" xml:space="preserve">
+    <value>Document Inquiry</value>
+  </data>
+  <data name="AR_Recurring_Charges" xml:space="preserve">
+    <value>Recurring Charges</value>
+  </data>
+  <data name="AP_Adjustment_Batch_List" xml:space="preserve">
+    <value>Adjustment Batch List</value>
+  </data>
+  <data name="AR_Clear_History" xml:space="preserve">
+    <value>Clear History</value>
+  </data>
+  <data name="AR_Clear_Statistics" xml:space="preserve">
+    <value>Clear Statistics</value>
+  </data>
+  <data name="AR_Quick_Receipt_Entry" xml:space="preserve">
+    <value>Quick Receipt Entry</value>
+  </data>
+  <data name="IC_Contract_Codes" xml:space="preserve">
+    <value>Contract Codes</value>
+  </data>
+  <data name="AP_Clear_History" xml:space="preserve">
+    <value>Clear History</value>
+  </data>
+  <data name="AR_Delete_Inactive_Records" xml:space="preserve">
+    <value>Delete Inactive Records</value>
+  </data>
+  <data name="AR_Adjustment_Batch_List" xml:space="preserve">
+    <value>Adjustment Batch List</value>
+  </data>
+  <data name="AR_Adjustment_Entry" xml:space="preserve">
+    <value>Adjustment Entry</value>
+  </data>
+  <data name="AR_National_Accounts" xml:space="preserve">
+    <value>National Accounts</value>
+  </data>
+  <data name="AR_Refund_Entry" xml:space="preserve">
+    <value>Refund Entry</value>
+  </data>
+  <data name="GL_Recurring_Entries" xml:space="preserve">
+    <value>Recurring Entries</value>
+  </data>
+  <data name="GL_Source_Journals" xml:space="preserve">
+    <value>Source Journals</value>
+  </data>
+  <data name="IC_Update_Bills_of_Material" xml:space="preserve">
+    <value>Update Bills of Material</value>
+  </data>
+  <data name="OE_Shipment_Entry" xml:space="preserve">
+    <value>Shipment Entry</value>
+  </data>
+  <data name="AR_Items" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="AR_Create_Write_Off_Batch" xml:space="preserve">
+    <value>Create Write-Off Batch</value>
+  </data>
+  <data name="IC_Serial_Registration" xml:space="preserve">
+    <value>Serial Registration</value>
+  </data>
+  <data name="IC_Warranty_Codes" xml:space="preserve">
+    <value>Warranty Codes</value>
+  </data>
+  <data name="AR_Ship_To_Locations" xml:space="preserve">
+    <value>Ship-To Locations</value>
+  </data>
+  <data name="AP_Adjustment_Entry" xml:space="preserve">
+    <value>Adjustment Entry</value>
+  </data>
+  <data name="CS_Reminder_List" xml:space="preserve">
+    <value>Reminder List</value>
+  </data>
+  <data name="AP_Clear_Statistics" xml:space="preserve">
+    <value>Clear Statistics</value>
+  </data>
+  <data name="GL_Consolidate_Posted_Transactions" xml:space="preserve">
+    <value>Consolidate Posted Transactions</value>
+  </data>
+  <data name="GL_Create_Accounts" xml:space="preserve">
+    <value>Create Accounts</value>
+  </data>
+  <data name="Banking_Services" xml:space="preserve">
+    <value>Bank Services</value>
+  </data>
+  <data name="AS_MenuCustomization" xml:space="preserve">
+    <value>Customize Navigation Menu</value>
+  </data>
+  <data name="AS_MenuCustomization_Instructions" xml:space="preserve">
+    <value>Customize the navigation menu by hiding or showing web screens and categories. If you hide all screens for a module, the module does not appear in the navigation menu.</value>
+  </data>
+  <data name="CompanySetup" xml:space="preserve">
+    <value>Company Setup</value>
+  </data>
+  <data name="DataAndMaintenance" xml:space="preserve">
+    <value>Data and Maintenance</value>
+  </data>
+  <data name="PaymentProcessing" xml:space="preserve">
+    <value>Payment Processing</value>
+  </data>
+  <data name="Tax_Setup" xml:space="preserve">
+    <value>Tax Setup</value>
+  </data>
+  <data name="Customization" xml:space="preserve">
+    <value>Customization</value>
+  </data>
+  <data name="AR_UpdateRecurringCharges" xml:space="preserve">
+    <value>Update Recurring Charges</value>
+  </data>
+  <data name="AS_UserSecurity" xml:space="preserve">
+    <value>Users and Security</value>
+  </data>
+  <data name="Bank_CreditCardTypes" xml:space="preserve">
+    <value>Credit Card Types</value>
+  </data>
+  <data name="GL_Transaction_History" xml:space="preserve">
+    <value>Transaction History</value>
+  </data>
+  <data name="AR_Process_Credit_Card_Payments" xml:space="preserve">
+    <value>Process Credit Card Payments</value>
+  </data>
+  <data name="GL_Account_Permissions" xml:space="preserve">
+    <value>Account Permissions</value>
+  </data>
+  <data name="GL_Create_Revaluation_Batch" xml:space="preserve">
+    <value>Create Revaluation Batch</value>
+  </data>
+  <data name="AS_WorkProfile" xml:space="preserve">
+    <value>UI Profiles</value>
+  </data>
+  <data name="SIR_Report1" xml:space="preserve">
+    <value>Actual YTD</value>
+  </data>
+  <data name="SIR_Report2" xml:space="preserve">
+    <value>Actual vs Prior</value>
+  </data>
+  <data name="SIR_Report3" xml:space="preserve">
+    <value>Actual vs Budget</value>
+  </data>
+  <data name="SIR_Report4" xml:space="preserve">
+    <value>Month to Month</value>
+  </data>
+  <data name="SIR_Title" xml:space="preserve">
+    <value>Intelligence</value>
+  </data>
+  <data name="SIR_Btn" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+    <comment>Top Menu</comment>
+  </data>
+  <data name="PinMenu" xml:space="preserve">
+    <value>Pin Navigation Menu</value>
+    <comment>Settings Menu</comment>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Top Menu</comment>
+  </data>
+  <data name="UnpinMenu" xml:space="preserve">
+    <value>Unpin Navigation Menu</value>
+    <comment>Settings Menu</comment>
+  </data>
+  <data name="OE_CapturePaymentsWithInvoices" xml:space="preserve">
+    <value>Capture Payments with Invoices</value>
+  </data>
+  <data name="Saved_Queries" xml:space="preserve">
+    <value>Saved Queries </value>
+  </data>
+  <data name="Inquiry_ToolTip" xml:space="preserve">
+    <value>This query displays results in a special format with multiple interactive tables. You cannot use it as the basis for custom saved queries.</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Tools</value>
+    <comment>Top Menu</comment>
+  </data>
+  <data name="CollapseMenu" xml:space="preserve">
+    <value>Collapse Menu</value>
+    <comment>Collapse Menu</comment>
+  </data>
+  <data name="ExpandMenu" xml:space="preserve">
+    <value>Expand Menu</value>
+    <comment>Expand Menu</comment>
+  </data>
+  <data name="HelpTitle" xml:space="preserve">
+    <value>Find help for setting up and using Sage 300c</value>
+    <comment>Top Menu</comment>
+  </data>
+  <data name="ToolsTitle" xml:space="preserve">
+    <value>Show or hide the web toolbar</value>
+    <comment>Top Menu</comment>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+    <comment>Top Menu</comment>
+  </data>
+  <data name="SearchTitle" xml:space="preserve">
+    <value>Search objects by keyword</value>
+    <comment>Top Menu</comment>
+  </data>
+  <data name="GlobalSearch" xml:space="preserve">
+    <value>Global Search</value>
+  </data>
+  <data name="GlobalSearchFailed" xml:space="preserve">
+    <value>A problem occurred and the search could not be performed. Contact your system administrator for help.</value>
+  </data>
+  <data name="CustomizedQueries" xml:space="preserve">
+    <value>Customized Queries</value>
+    <comment>Inqiury Tab</comment>
+  </data>
+  <data name="SingaporeGST" xml:space="preserve">
+    <value>Singapore Tax Reports</value>
+  </data>
+  <data name="TS_ImportTaxCodes" xml:space="preserve">
+    <value>T/S Import Tax Codes</value>
+  </data>
+  <data name="TS_GSTIAF" xml:space="preserve">
+    <value>T/S GST IAF Generator</value>
+  </data>
+  <data name="TS_TaxCodeMapping" xml:space="preserve">
+    <value>T/S Tax Code Mapping</value>
+  </data>
+  <data name="Tax_ReverseCharge" xml:space="preserve">
+    <value>Reverse Charges</value>
+  </data>
+  <data name="AustraliaGST" xml:space="preserve">
+    <value>Australia Tax Reports</value>
+  </data>
+  <data name="TW_BusinessActivityStatement" xml:space="preserve">
+    <value>T/W Business Activity Statement</value>
+  </data>
+  <data name="TW_Configurations" xml:space="preserve">
+    <value>T/W Configurations</value>
+  </data>
+  <data name="Tax_WithholdingTaxRates" xml:space="preserve">
+    <value>Withholding Tax Rates</value>
+  </data>
+  <data name="MalaysiaGST" xml:space="preserve">
+    <value>Malaysia Tax Reports</value>
+  </data>
+  <data name="TM_GST03" xml:space="preserve">
+    <value>GST 03</value>
+  </data>
+  <data name="TM_GSTGAF" xml:space="preserve">
+    <value>GST GAF Generator</value>
+  </data>
+  <data name="TM_ImportTaxCodes" xml:space="preserve">
+    <value>Import Tax Codes</value>
+  </data>
+  <data name="TM_TaxCodeMapping" xml:space="preserve">
+    <value>Tax Code Mapping</value>
+  </data>
+  <data name="TM_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="BusinessActivityStatement" xml:space="preserve">
+    <value>Business Activity Statement</value>
+  </data>
+  <data name="Configurations" xml:space="preserve">
+    <value>Configurations</value>
+  </data>
+  <data name="GSTIAF" xml:space="preserve">
+    <value>GST IAF Generator</value>
+  </data>
+  <data name="ImportTaxCodes" xml:space="preserve">
+    <value>Import Tax Codes</value>
+  </data>
+  <data name="TaxCodeMapping" xml:space="preserve">
+    <value>Tax Code Mapping</value>
+  </data>
+  <data name="PR_EmployeeTimeCard" xml:space="preserve">
+    <value>Payroll Employee Timecards</value>
+  </data>
+  <data name="PR_EmployeeTimeCard_CA" xml:space="preserve">
+    <value>Canadian Payroll Employee Timecards</value>
+  </data>
+  <data name="PR_EmployeeTimeCard_US" xml:space="preserve">
+    <value>US Payroll Employee Timecards</value>
+  </data>
+  <data name="MT_Contacts" xml:space="preserve">
+    <value>M/T Contacts</value>
+  </data>
+  <data name="MT_Setup" xml:space="preserve">
+    <value>M/T Setup</value>
+  </data>
+  <data name="MT_OptionalFields" xml:space="preserve">
+    <value>Optional Fields</value>
+  </data>
+  <data name="MultipleContacts" xml:space="preserve">
+    <value>Multiple Contacts</value>
+  </data>
+  <data name="MT_Contacts_Contacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="SetCompanyColor" xml:space="preserve">
+    <value>Customize Theme Color</value>
+    <comment>Settings Menu</comment>
+  </data>
+  <data name="SetCompanyColorDB" xml:space="preserve">
+    <value>Set Theme Color from Database</value>
+    <comment>Settings Menu</comment>
+  </data>
+  <data name="Small" xml:space="preserve">
+    <value>Small</value>
+    <comment>Setting Menu Form Size</comment>
+  </data>
+  <data name="TextSize" xml:space="preserve">
+    <value>Text Size</value>
+    <comment>Setting Menu</comment>
+  </data>
+  <data name="Large" xml:space="preserve">
+    <value>Large</value>
+    <comment>Setting Menu Form Size</comment>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Medium</value>
+    <comment>Setting Menu Form Size</comment>
+  </data>
+  <data name="FormSizeResetConfirmation" xml:space="preserve">
+    <value>Clear all text size settings on individual screens, and reset text size to the default (Large)?</value>
+    <comment>Setting Menu Form Size</comment>
+  </data>
+  <data name="CS_PaymentsAcceptance" xml:space="preserve">
+    <value>Payments Acceptance</value>
+  </data>
+  <data name="CS_ServiceCenter" xml:space="preserve">
+    <value>Service Center</value>
+  </data>
+  <data name="AR_Customer_List" xml:space="preserve">
+    <value>Customer List</value>
+  </data>
+  <data name="GL_SourceCurrencyInquiry" xml:space="preserve">
+    <value>Source Currency Inquiry</value>
+  </data>
+  <data name="GL_BudgetMaintenance" xml:space="preserve">
+    <value>Budget Maintenance</value>
+  </data>
+  <data name="Module_PM" xml:space="preserve">
+    <value>Project and Job Costing</value>
+  </data>
+  <data name="PM_Costs" xml:space="preserve">
+    <value>Costs</value>
+  </data>
+  <data name="PM_Material_Allocation" xml:space="preserve">
+    <value>Material Allocation</value>
+  </data>
+  <data name="PM_Update_Retainage" xml:space="preserve">
+    <value>Update Retainage</value>
+  </data>
+  <data name="PM_Material_Return" xml:space="preserve">
+    <value>Material Returns</value>
+  </data>
+  <data name="PM_Material_Usage" xml:space="preserve">
+    <value>Material Usage</value>
+  </data>
+  <data name="PM_Transactions" xml:space="preserve">
+    <value>PJC Transactions</value>
+  </data>
+  <data name="PM_OpeningBalances" xml:space="preserve">
+    <value>Opening Balances</value>
+  </data>
+  <data name="PM_Transaction_Listing" xml:space="preserve">
+    <value>Transaction Listing</value>
+  </data>
+  <data name="PM_Transaction_Reports" xml:space="preserve">
+    <value>PJC Transaction Reports</value>
+  </data>
+  <data name="PM_Transaction_Posting" xml:space="preserve">
+    <value>Post Transactions</value>
+  </data>
+  <data name="SIR_Msg1" xml:space="preserve">
+    <value>Business Intelligence Reporting</value>
+  </data>
+  <data name="SIR_Msg2" xml:space="preserve">
+    <value>Business Intelligence Reporting Solutions</value>
+  </data>
+  <data name="SIR_SDAMsg1" xml:space="preserve">
+    <value>Sage Data &amp; Analytics</value>
+  </data>
+  <data name="SIR_SDAMsg2" xml:space="preserve">
+    <value>Gain business insights from data-driven financial reports so you can manage your business more effectively.</value>
+  </data>
+  <data name="PM_Setup" xml:space="preserve">
+    <value>PJC Setup</value>
+  </data>
+  <data name="PM_CostTypes" xml:space="preserve">
+    <value>Cost Types</value>
+  </data>
+  <data name="PM_Charges" xml:space="preserve">
+    <value>Charges</value>
+  </data>
+  <data name="PM_Equipment" xml:space="preserve">
+    <value>Equipment</value>
+  </data>
+  <data name="PM_Revise_Estimates" xml:space="preserve">
+    <value>Revise Estimates</value>
+  </data>
+  <data name="PM_Account_Sets" xml:space="preserve">
+    <value>Account Sets</value>
+  </data>
+  <data name="PM_Subcontractor" xml:space="preserve">
+    <value>Subcontractors</value>
+  </data>
+  <data name="PM_Projects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="PM_Setup_Reports" xml:space="preserve">
+    <value>PJC Setup Reports</value>
+  </data>
+  <data name="AP_Setup_Reports" xml:space="preserve">
+    <value>A/P Setup Reports</value>
+  </data>
+  <data name="PM_GLIntegration" xml:space="preserve">
+    <value>G/L Integration</value>
+  </data>
+  <data name="PM_OptionalFields" xml:space="preserve">
+    <value>Optional Fields</value>
+  </data>
+  <data name="PM_MiscellaneousExpenses" xml:space="preserve">
+    <value>Miscellaneous Expenses</value>
+  </data>
+  <data name="PM_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="PM_OverheadExpenses" xml:space="preserve">
+    <value>Overhead Expenses</value>
+  </data>
+  <data name="PO_Items" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="PO_VendorDetails" xml:space="preserve">
+    <value>Vendor Details</value>
+  </data>
+  <data name="PO_WeightUOM" xml:space="preserve">
+    <value>Weight Unit of Measure</value>
+  </data>
+  <data name="PM_EquipmentUsage" xml:space="preserve">
+    <value>Equipment Usage</value>
+  </data>
+  <data name="PM_ContractStructures" xml:space="preserve">
+    <value>Contract Structures</value>
+  </data>
+  <data name="PM_Categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="PO_AccountSets" xml:space="preserve">
+    <value>Account Sets</value>
+    <comment>Top Menu</comment>
+  </data>
+  <data name="PM_SegmentCodes" xml:space="preserve">
+    <value>Segment Codes</value>
+  </data>
+  <data name="PM_Employees" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="AR_Setup_Reports" xml:space="preserve">
+    <value>A/R Setup Reports</value>
+  </data>
+  <data name="OE_Setup_Report" xml:space="preserve">
+    <value>O/E Setup Reports</value>
+  </data>
+  <data name="IC_GL_Integration" xml:space="preserve">
+    <value>G/L Integration</value>
+  </data>
+  <data name="IC_Mask_Structures" xml:space="preserve">
+    <value>Mask Structures</value>
+  </data>
+  <data name="IC_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="IC_Warranty_Contract_Codes" xml:space="preserve">
+    <value>Warranty/Contract Codes</value>
+  </data>
+  <data name="Bank_Setup_Reports" xml:space="preserve">
+    <value>Bank Setup Reports</value>
+  </data>
+  <data name="GL_Statement_Designer" xml:space="preserve">
+    <value>Statement Designer</value>
+  </data>
+  <data name="GL_Print_Financial_Statements" xml:space="preserve">
+    <value>Print Financial Statements</value>
+  </data>
+  <data name="Module_CanadianPayroll" xml:space="preserve">
+    <value>Canadian Payroll</value>
+  </data>
+  <data name="Module_USPayroll" xml:space="preserve">
+    <value>US Payroll</value>
+  </data>
+  <data name="PR_Accruals_Report" xml:space="preserve">
+    <value>Accruals</value>
+  </data>
+  <data name="PR_Assign_EarnDed_To_Employees" xml:space="preserve">
+    <value>Assign Earn/Ded to Employees</value>
+  </data>
+  <data name="PR_Assign_Employee_EarnDed_Audit_Report" xml:space="preserve">
+    <value>Assign Employee Earn/Ded Audit</value>
+  </data>
+  <data name="PR_Assign_Employee_Tax_Audit_Report" xml:space="preserve">
+    <value>Assign Employee Tax Audit</value>
+  </data>
+  <data name="PR_Assign_Selection_Lists_To_Emp" xml:space="preserve">
+    <value>Assign Selection Lists to Emp</value>
+  </data>
+  <data name="PR_Assign_Tax_To_Employees" xml:space="preserve">
+    <value>Assign Tax to Employees</value>
+  </data>
+  <data name="PR_Calculate_Payroll" xml:space="preserve">
+    <value>Calculate Payroll</value>
+  </data>
+  <data name="PR_Certified_Payroll_Report" xml:space="preserve">
+    <value>Certified Payroll</value>
+  </data>
+  <data name="PR_Check_Inquiry" xml:space="preserve">
+    <value>Check Inquiry</value>
+  </data>
+  <data name="PR_Check_List" xml:space="preserve">
+    <value>Check List</value>
+  </data>
+  <data name="PR_Cheque_Inquiry" xml:space="preserve">
+    <value>Cheque Inquiry</value>
+  </data>
+  <data name="PR_Cheque_List" xml:space="preserve">
+    <value>Cheque List</value>
+  </data>
+  <data name="PR_Class_Codes" xml:space="preserve">
+    <value>Class Codes</value>
+  </data>
+  <data name="PR_Class_Codes_Report" xml:space="preserve">
+    <value>Class Codes</value>
+  </data>
+  <data name="PR_Combine_ETF_Files" xml:space="preserve">
+    <value>Combine ETF Files</value>
+  </data>
+  <data name="PR_Common_Deduction_Limits" xml:space="preserve">
+    <value>Common Deduction Limits</value>
+  </data>
+  <data name="PR_Common_Deduction_Limits_Report" xml:space="preserve">
+    <value>Common Deductions Limits</value>
+  </data>
+  <data name="PR_Copy_Timecard" xml:space="preserve">
+    <value>Copy Timecard</value>
+  </data>
+  <data name="PR_CRA_Remittance_Info_Report" xml:space="preserve">
+    <value>CRA Remittance Info</value>
+  </data>
+  <data name="PR_Create_GL_Batch" xml:space="preserve">
+    <value>Create G/L Batch</value>
+  </data>
+  <data name="PR_Delete_Inactive_Records" xml:space="preserve">
+    <value>Delete Inactive Records</value>
+  </data>
+  <data name="PR_Delete_Inactive_Records_Audit_Report" xml:space="preserve">
+    <value>Delete Inactive Records Audit</value>
+  </data>
+  <data name="PR_Duplicate_SSN_Report" xml:space="preserve">
+    <value>Duplicate SSN</value>
+  </data>
+  <data name="PR_Earnings_And_Deductions_Report" xml:space="preserve">
+    <value>Earnings and Deductions</value>
+  </data>
+  <data name="PR_Earnings_And_Hours_Report" xml:space="preserve">
+    <value>Earnings and Hours</value>
+  </data>
+  <data name="PR_Earnings_Deductions" xml:space="preserve">
+    <value>Earnings and Deductions</value>
+  </data>
+  <data name="PR_Earnings_Deductions_Summary_Report" xml:space="preserve">
+    <value>Earnings/Deductions Summary</value>
+  </data>
+  <data name="PR_Earns_Deds_Summary_For_T4AR2_Report" xml:space="preserve">
+    <value>Earns/Deds Summary for T4A/R2</value>
+  </data>
+  <data name="PR_EFT_Combine" xml:space="preserve">
+    <value>EFT Combine</value>
+  </data>
+  <data name="PR_EFT_Combine_History_Report" xml:space="preserve">
+    <value>EFT Combine History</value>
+  </data>
+  <data name="PR_EFT_Combine_Report" xml:space="preserve">
+    <value>EFT Combine</value>
+  </data>
+  <data name="PR_EFT_Direct_Deposit_Report" xml:space="preserve">
+    <value>EFT Direct Deposit</value>
+  </data>
+  <data name="PR_EFT_Options" xml:space="preserve">
+    <value>EFT Options</value>
+  </data>
+  <data name="PR_EFT_Options_Report" xml:space="preserve">
+    <value>EFT Options</value>
+  </data>
+  <data name="PR_EFT_Transactions_Report" xml:space="preserve">
+    <value>EFT Transactions</value>
+  </data>
+  <data name="PR_Employees" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="PR_Employee_Activity" xml:space="preserve">
+    <value>Employee Activity</value>
+  </data>
+  <data name="PR_Employee_Information_Report" xml:space="preserve">
+    <value>Employee Information</value>
+  </data>
+  <data name="PR_Employee_Selection" xml:space="preserve">
+    <value>Employee Selection</value>
+  </data>
+  <data name="PR_Employee_Selection_Report" xml:space="preserve">
+    <value>Employee Selection</value>
+  </data>
+  <data name="PR_Employee_Supplemental_Info" xml:space="preserve">
+    <value>Employee Supplemental Info</value>
+  </data>
+  <data name="PR_Employee_Supplemental_Info_Report" xml:space="preserve">
+    <value>Employee Supplemental Info</value>
+  </data>
+  <data name="PR_Employee_Timecards" xml:space="preserve">
+    <value>Employee Timecards</value>
+  </data>
+  <data name="PR_Employee_Timecards_Report" xml:space="preserve">
+    <value>Employee Timecards</value>
+  </data>
+  <data name="PR_Federal_And_State_Taxes" xml:space="preserve">
+    <value>Federal and State Taxes</value>
+  </data>
+  <data name="PR_Federal_Tax_Filing_Report" xml:space="preserve">
+    <value>Federal Tax Filing</value>
+  </data>
+  <data name="PR_Find_Duplicate_SSN" xml:space="preserve">
+    <value>Find Duplicate SSN</value>
+  </data>
+  <data name="PR_Generate_ETF_File" xml:space="preserve">
+    <value>Generate EFT File</value>
+  </data>
+  <data name="PR_GL_Integration" xml:space="preserve">
+    <value>G/L Integration</value>
+  </data>
+  <data name="PR_GL_Integration_Report" xml:space="preserve">
+    <value>G/L Integration</value>
+  </data>
+  <data name="PR_Hours_Analysis_Report" xml:space="preserve">
+    <value>Hours Analysis</value>
+  </data>
+  <data name="PR_Income_Taxes" xml:space="preserve">
+    <value>Income Taxes</value>
+  </data>
+  <data name="PR_Jobs_Report" xml:space="preserve">
+    <value>Jobs</value>
+  </data>
+  <data name="PR_Local_And_Other_Custom_Taxes" xml:space="preserve">
+    <value>Local and Other Custom Taxes</value>
+  </data>
+  <data name="PR_Manual_Checks" xml:space="preserve">
+    <value>Manual Checks</value>
+  </data>
+  <data name="PR_Manual_Checks_Report" xml:space="preserve">
+    <value>Manual Checks</value>
+  </data>
+  <data name="PR_Manual_Cheques" xml:space="preserve">
+    <value>Manual Cheques</value>
+  </data>
+  <data name="PR_Manual_Cheques_Report" xml:space="preserve">
+    <value>Manual Cheques</value>
+  </data>
+  <data name="PR_Ministere_Du_Revenu_Info_Report" xml:space="preserve">
+    <value>Ministere du Revenu Info</value>
+  </data>
+  <data name="PR_Optional_Fields" xml:space="preserve">
+    <value>Optional Fields</value>
+  </data>
+  <data name="PR_Optional_Fields_Report" xml:space="preserve">
+    <value>Optional Fields</value>
+  </data>
+  <data name="PR_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="PR_Options_Report" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="PR_Overtimer_Schedules" xml:space="preserve">
+    <value>Overtime Schedules</value>
+  </data>
+  <data name="PR_Overtime_Schedules_Report" xml:space="preserve">
+    <value>Overtime Schedules</value>
+  </data>
+  <data name="PR_Payroll_Checks" xml:space="preserve">
+    <value>Payroll Checks</value>
+  </data>
+  <data name="PR_Payroll_Cheques" xml:space="preserve">
+    <value>Payroll Cheques</value>
+  </data>
+  <data name="PR_Payroll_Employees" xml:space="preserve">
+    <value>Payroll Employees</value>
+  </data>
+  <data name="PR_Payroll_Employee_Reports" xml:space="preserve">
+    <value>Payroll Employee Reports</value>
+  </data>
+  <data name="PR_Payroll_GL_Transactions_Report" xml:space="preserve">
+    <value>Payroll G/L Transactions</value>
+  </data>
+  <data name="PR_Payroll_Government_Reports" xml:space="preserve">
+    <value>Payroll Government Reports</value>
+  </data>
+  <data name="PR_Payroll_Job_Register_Report" xml:space="preserve">
+    <value>Payroll Job Register</value>
+  </data>
+  <data name="PR_Payroll_Periodic_Processing" xml:space="preserve">
+    <value>Payroll Periodic Processing</value>
+  </data>
+  <data name="PR_Payroll_Periodic_Processing_Reports" xml:space="preserve">
+    <value>Payroll Periodic Processing Reports</value>
+  </data>
+  <data name="PR_Payroll_Processing_Exceptions_Report" xml:space="preserve">
+    <value>Payroll Processing Exceptions</value>
+  </data>
+  <data name="PR_Payroll_Register_Report" xml:space="preserve">
+    <value>Payroll Register</value>
+  </data>
+  <data name="PR_Payroll_Setup" xml:space="preserve">
+    <value>Payroll Setup</value>
+  </data>
+  <data name="PR_Payroll_Setup_Reports" xml:space="preserve">
+    <value>Payroll Setup Reports</value>
+  </data>
+  <data name="PR_Payroll_Timecards" xml:space="preserve">
+    <value>Payroll Timecards</value>
+  </data>
+  <data name="PR_Payroll_Transactions" xml:space="preserve">
+    <value>Payroll Transactions</value>
+  </data>
+  <data name="PR_Payroll_Transaction_Reports" xml:space="preserve">
+    <value>Payroll Transaction Reports</value>
+  </data>
+  <data name="PR_Post_Manual_Checks" xml:space="preserve">
+    <value>Post Manual (ATF) Checks</value>
+  </data>
+  <data name="PR_Post_Manual_Cheques" xml:space="preserve">
+    <value>Post Manual (ATF) Cheques</value>
+  </data>
+  <data name="PR_Precheck_Payroll_Job_Register_Report" xml:space="preserve">
+    <value>Pre-Check Payroll Job Register</value>
+  </data>
+  <data name="PR_Precheck_Payroll_Register_Report" xml:space="preserve">
+    <value>Pre-Check Payroll Register</value>
+  </data>
+  <data name="PR_Precheque_Payroll_Job_Reg_Report" xml:space="preserve">
+    <value>Pre-Cheque Payroll Job Reg</value>
+  </data>
+  <data name="PR_Precheque_Payroll_Register_Report" xml:space="preserve">
+    <value>Pre-Cheque Payroll Register</value>
+  </data>
+  <data name="PR_Process_Manual_Checks" xml:space="preserve">
+    <value>Process Manual Checks</value>
+  </data>
+  <data name="PR_Process_Manual_Cheques" xml:space="preserve">
+    <value>Process Manual Cheques</value>
+  </data>
+  <data name="PR_Qtrly_Wage_On_Diskette_Report" xml:space="preserve">
+    <value>Qtrly Wage on Disk(ette)</value>
+  </data>
+  <data name="PR_Qtr_Wage_On_Diskette_Status_Report" xml:space="preserve">
+    <value>Qtr Wage on Disk(ette) Status</value>
+  </data>
+  <data name="PR_Quarterly_Wage_Report" xml:space="preserve">
+    <value>Quarterly Wage</value>
+  </data>
+  <data name="PR_R1s_Electronic_Filing_Report" xml:space="preserve">
+    <value>R1s Electronic Filing</value>
+  </data>
+  <data name="PR_Record_Of_Employment_Report" xml:space="preserve">
+    <value>Record of Employment</value>
+  </data>
+  <data name="PR_Releve_1s_Report" xml:space="preserve">
+    <value>Releve 1s</value>
+  </data>
+  <data name="PR_Shift_Differential_Schedules" xml:space="preserve">
+    <value>Shift Differential Schedules</value>
+  </data>
+  <data name="PR_Shift_Differential_Schedules_Report" xml:space="preserve">
+    <value>Shift Differential Schedules</value>
+  </data>
+  <data name="PR_State_Tax_Filing_Report" xml:space="preserve">
+    <value>State Tax Filing</value>
+  </data>
+  <data name="PR_T4As_Electronic_Filing_Report" xml:space="preserve">
+    <value>T4As Electronic Filing</value>
+  </data>
+  <data name="PR_T4As_Report" xml:space="preserve">
+    <value>T4As</value>
+  </data>
+  <data name="PR_T4s_Electronic_Filing_Report" xml:space="preserve">
+    <value>T4s Electronic Filing</value>
+  </data>
+  <data name="PR_T4s_Report" xml:space="preserve">
+    <value>T4s</value>
+  </data>
+  <data name="PR_Tax_Calculation_Analysis_Report" xml:space="preserve">
+    <value>Tax Calculation Analysis</value>
+  </data>
+  <data name="PR_Tax_Profiles_Report" xml:space="preserve">
+    <value>Tax Profiles</value>
+  </data>
+  <data name="PR_Timecards" xml:space="preserve">
+    <value>Timecards</value>
+  </data>
+  <data name="PR_Timecards_Report" xml:space="preserve">
+    <value>Timecards</value>
+  </data>
+  <data name="PR_Timecard_List" xml:space="preserve">
+    <value>Timecard List</value>
+  </data>
+  <data name="PR_Transaction_History" xml:space="preserve">
+    <value>Transaction History</value>
+  </data>
+  <data name="PR_Transaction_History_Audit_Report" xml:space="preserve">
+    <value>Transaction History Audit</value>
+  </data>
+  <data name="PR_Transaction_History_Report" xml:space="preserve">
+    <value>Transaction History</value>
+  </data>
+  <data name="PR_Transafer_Employee_Timecards" xml:space="preserve">
+    <value>Transfer Employee Timecards</value>
+  </data>
+  <data name="PR_Update_EarnDed_For_All_Emp" xml:space="preserve">
+    <value>Update Earn/Ded for All Emp</value>
+  </data>
+  <data name="PR_Update_Employee_EarnDed_Audit_Report" xml:space="preserve">
+    <value>Update Employee Earn/Ded Audit</value>
+  </data>
+  <data name="PR_Update_Employee_Taxes_Audit_Report" xml:space="preserve">
+    <value>Update Employee Taxes Audit</value>
+  </data>
+  <data name="PR_Update_Local_Taxes_Audit_Report" xml:space="preserve">
+    <value>Update Local Taxes Audit</value>
+  </data>
+  <data name="PR_Update_Tax_For_All_Employees" xml:space="preserve">
+    <value>Update Tax for All Employees</value>
+  </data>
+  <data name="PR_Update_TD1_Claim" xml:space="preserve">
+    <value>Update TD1 Claim</value>
+  </data>
+  <data name="PR_Update_TD1_Claim_Audit_Report" xml:space="preserve">
+    <value>Update TD1 Claim Audit</value>
+  </data>
+  <data name="PR_User_Security_Setup" xml:space="preserve">
+    <value>User Security Setup</value>
+  </data>
+  <data name="PR_User_Security_Setup_Report" xml:space="preserve">
+    <value>User Security Setup</value>
+  </data>
+  <data name="PR_W2_Tax_Filing_Report" xml:space="preserve">
+    <value>W-2 Tax Filing</value>
+  </data>
+  <data name="PR_Workers_Compensation_Codes" xml:space="preserve">
+    <value>Workers Compensation Codes</value>
+  </data>
+  <data name="PR_Workers_Compensation_Codes_Report" xml:space="preserve">
+    <value>Workers Compensation Codes</value>
+  </data>
+  <data name="PR_Workers_Compensation_Report" xml:space="preserve">
+    <value>Workers Compensation</value>
+  </data>
+  <data name="PR_Work_Classification_Codes" xml:space="preserve">
+    <value>Work Classification Codes</value>
+  </data>
+  <data name="PR_Work_Classification_Codes_Report" xml:space="preserve">
+    <value>Work Classification Codes</value>
+  </data>
+  <data name="IC_Serial_Numbers" xml:space="preserve">
+    <value>Serial Numbers</value>
+  </data>
+  <data name="Financial_Reporter" xml:space="preserve">
+    <value>G/L Financial Reporter</value>
+  </data>
+  <data name="AS_UserActivityReport" xml:space="preserve">
+    <value>User Activity Report</value>
+  </data>
+  <data name="PM_Adjustments" xml:space="preserve">
+    <value>Adjustments</value>
+  </data>
+  <data name="PM_ContractMaintenance" xml:space="preserve">
+    <value>Contract Maintenance</value>
+  </data>
+  <data name="PM_TransactionHistory" xml:space="preserve">
+    <value>Transaction History</value>
+  </data>
+  <data name="PM_Timecards" xml:space="preserve">
+    <value>Timecards</value>
+  </data>
+  <data name="PM_Transaction_History" xml:space="preserve">
+    <value>Transaction History</value>
+  </data>
+  <data name="PM_BudgetMaintenance" xml:space="preserve">
+    <value>Budget Maintenance</value>
+  </data>
+  <data name="CS_SageHR" xml:space="preserve">
+    <value>Sage HR Setup</value>
+  </data>
+  <data name="PR_SageHR" xml:space="preserve">
+    <value>SageHR</value>
+  </data>
+  <data name="PR_SageHR_Employee" xml:space="preserve">
+    <value>Sync Employee</value>
+  </data>
+  <data name="HQ_SageHR_Setup" xml:space="preserve">
+    <value>Sage HR Setup</value>
+  </data>
+  <data name="HQ_Sync_Employee" xml:space="preserve">
+    <value>Sync Employees</value>
+  </data>
+  <data name="HQ_SageHR_Integration" xml:space="preserve">
+    <value>Sage HR Integration</value>
+  </data>
+  <data name="HQ_Publish_Payslip" xml:space="preserve">
+    <value>Publish Payslips</value>
+  </data>
+</root>

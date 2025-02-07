@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Template_StepDescriptionMain" xml:space="preserve">
+    <value>Upgrade from {0} to {1}</value>
+  </data>
+  <data name="EndUpgradeProcess" xml:space="preserve">
+    <value>End Upgrade Process</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="Template_ReleaseSpecificTitleDescTargetedDotNetFrameworkVersion" xml:space="preserve">
+    <value>This step will automatically convert the targeted version of the Microsoft .NET Framework to V{0} in all projects in the solution being upgraded.</value>
+  </data>
+  <data name="GenerateXMLDocFile" xml:space="preserve">
+    <value>Generate XML documentation file</value>
+  </data>
+  <data name="FoundPostBuildEventEntry" xml:space="preserve">
+    <value>Found PostBuildEvent Entry</value>
+  </data>
+  <data name="ShowLog" xml:space="preserve">
+    <value>Show Log</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ReleaseAllUpgraded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseAllUpgraded.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="CopiedAllFilesFrom" xml:space="preserve">
+    <value>Copied all files from</value>
+  </data>
+  <data name="EnsureBackup" xml:space="preserve">
+    <value>Note: Before proceeding ensure a backup has been performed!</value>
+  </data>
+  <data name="AddReplaceFile" xml:space="preserve">
+    <value>Add/Replace file: </value>
+  </data>
+  <data name="FollowingSteps" xml:space="preserve">
+    <value>The following steps will be performed:</value>
+  </data>
+  <data name="BeforeUpdate" xml:space="preserve">
+    <value>Before update</value>
+  </data>
+  <data name="Template_UpgradeLibrary" xml:space="preserve">
+    <value>Upgrade library from {0} to {1}</value>
+  </data>
+  <data name="ReleaseSpecificTitleConsolidateEnumerations" xml:space="preserve">
+    <value>Consolidation of Enumeration Files</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="Upgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="PostBuildEventTextExistsButIsEmpty" xml:space="preserve">
+    <value>PostBuildEvent text exists but is empty</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>deleted</value>
+  </data>
+  <data name="ReleaseAllTitleSyncWebFiles" xml:space="preserve">
+    <value>Synchronize Web Files</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="SolutionDirectory" xml:space="preserve">
+    <value>Solution Directory</value>
+  </data>
+  <data name="StepTitleMain" xml:space="preserve">
+    <value>Solution and Projects Upgrade</value>
+  </data>
+  <data name="ReleaseSpecificTitleUpdateTargetedDotNetFrameworkVersion" xml:space="preserve">
+    <value>Update targeted version of .NET Framework</value>
+  </data>
+  <data name="Template_SolutionUpgrade" xml:space="preserve">
+    <value>Solution Upgrade Wizard - V{0}</value>
+  </data>
+  <data name="ReleaseAllDescSyncAccpacLibs" xml:space="preserve">
+    <value>This step will upgrade the Accpac Libraries references.</value>
+  </data>
+  <data name="MainMenuNodeFoundButDoesNotHaveExistingMenuBackGoundEntry" xml:space="preserve">
+    <value>Main menu node found but does not have existing MEnuBackGoundImage entry.</value>
+  </data>
+  <data name="ReleaseAllTitleRecompile" xml:space="preserve">
+    <value>Recompile</value>
+  </data>
+  <data name="ReleaseSpecificDescConsolidateEnumerations" xml:space="preserve">
+    <value>This step will automatically convert all the distinct enumeration files into a single file called 'Enumerations.cs' on a per-folder basis.</value>
+  </data>
+  <data name="ReleaseAllSyncWebFiles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseAllSyncWebFiles.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Dash" xml:space="preserve">
+    <value> - </value>
+  </data>
+  <data name="ReleaseAllUpgrade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseAllUpgrade.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReleaseAllTitleSyncAccpacLibs" xml:space="preserve">
+    <value>Synchronize Accpac Libraries</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Step</value>
+  </data>
+  <data name="Exists" xml:space="preserve">
+    <value>exists</value>
+  </data>
+  <data name="DoesNotExist" xml:space="preserve">
+    <value>does not exist</value>
+  </data>
+  <data name="BeginUpgradeProcess" xml:space="preserve">
+    <value>Begin Upgrade Process...</value>
+  </data>
+  <data name="MainMenuNodeFoundButDoesNotHaveExistingIconNameEntry" xml:space="preserve">
+    <value>Main menu node found but does not have existing IconName entry.</value>
+  </data>
+  <data name="Browser" xml:space="preserve">
+    <value>IEXPLORE.EXE</value>
+    <comment>Browser to use</comment>
+  </data>
+  <data name="AfterUpdate" xml:space="preserve">
+    <value>AfterUpdate</value>
+  </data>
+  <data name="AccpacPropsFileDoesNotExistInSolutionFolder" xml:space="preserve">
+    <value>The Accpac library was not found in the solution folder. No upgrade was necessary.</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ExtractedModuleId" xml:space="preserve">
+    <value>Extracted moduleid</value>
+  </data>
+  <data name="SolutionProjects" xml:space="preserve">
+    <value>Solution Projects</value>
+  </data>
+  <data name="SolutionProjectsToBeProcessed" xml:space="preserve">
+    <value>Solution projects to be processed</value>
+  </data>
+  <data name="ReleaseSpecificUpdateConsolidateEnumerations" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseSpecificUpdateConsolidateEnumerations.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReleaseAllDescConfirmation" xml:space="preserve">
+    <value>Ready to begin the upgrade.</value>
+  </data>
+  <data name="ReleaseSpecificUpdateTargetedDotNetFrameworkVersion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseSpecificUpdateTargetedDotNetFrameworkVersion.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReleaseAllDescRecompile" xml:space="preserve">
+    <value>The Solution and Project files have been upgraded.</value>
+  </data>
+  <data name="Template_ProcessingStep" xml:space="preserve">
+    <value>Processing {0}...</value>
+  </data>
+  <data name="InsertedCommand" xml:space="preserve">
+    <value>Inserted command</value>
+  </data>
+  <data name="ExceptionThrownPossibleLockedFile" xml:space="preserve">
+    <value>Exception thrown. Possible locked file</value>
+  </data>
+  <data name="ReleaseAllSyncAccpacLibs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseAllSyncAccpacLibs.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReleaseAllDescSyncWebFiles" xml:space="preserve">
+    <value>This step will upgrade the various global files included in the solution.</value>
+  </data>
+  <data name="ReleaseAllTitleConfirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="CopiedKendoFileFrom" xml:space="preserve">
+    <value>Copied Kendo files from</value>
+  </data>
+  <data name="ReleaseAllDescSyncKendoFiles" xml:space="preserve">
+    <value>This step will upgrade the Kendo JavaScript files in the solution.</value>
+  </data>
+  <data name="ReleaseAllTitleSyncKendoFiles" xml:space="preserve">
+    <value>Synchronize Kendo files</value>
+  </data>
+  <data name="ReleaseAllSyncKendoFiles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseAllSyncKendoFiles.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SearchingInAllProjectDirectoriesInstead" xml:space="preserve">
+    <value>Searching in all project directories instead.</value>
+  </data>
+  <data name="Template_AccpacPropsFileNotFoundInRootOfSolutionFolder" xml:space="preserve">
+    <value>{0} was not found in the root of the solution folder.</value>
+  </data>
+  <data name="Template_AttemptingToUpdateAllCsprojFiles" xml:space="preserve">
+    <value>Attempting to update all csproj files to reference the solution root folder based {0} file.</value>
+  </data>
+  <data name="Template_RemovingAllCopiesOfAccpacPropsFile" xml:space="preserve">
+    <value>Removing all copies of {0} located in project folders.</value>
+  </data>
+  <data name="Template_XCopiesOfPropsFileWereFound" xml:space="preserve">
+    <value>{0} copies of {1} were found:</value>
+  </data>
+  <data name="UpdatesToSupportMultipleSessionsAreAManualStep" xml:space="preserve">
+    <value>The updates to support multiple sessions must be made manually.</value>
+  </data>
+  <data name="ReleaseSpecificTitleDescRemovePreviousJqueryLibraries" xml:space="preserve">
+    <value>This step will automatially search for and remove all previous versions of jQuery specific library files from your solution and projects.</value>
+  </data>
+  <data name="ReleaseSpecificTitleRemovePreviousJqueryLibraries" xml:space="preserve">
+    <value>Remove previous version of jQuery libraries</value>
+  </data>
+  <data name="Template_ReleaseSpecificRemovePreviousJqueryLibraries" xml:space="preserve">
+    <value>The following previous versions of jQuery files will be removed from your solution and projects:
+
+jQuery UI V{0}</value>
+  </data>
+  <data name="ReleaseSpecificDescUnifyDisabled" xml:space="preserve">
+    <value>This step will need to be done manually.</value>
+  </data>
+  <data name="ReleaseSpecificTitleUnifyDisabled" xml:space="preserve">
+    <value>Unify HTML 'disabled' attribute</value>
+  </data>
+  <data name="ReleaseSpecificUnifyDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseSpecificUnifyDisabled.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UpdatesToUnifyDisabledAreAManualStep" xml:space="preserve">
+    <value>The updates to unify HTML 'disabled' attribute must be made manually.</value>
+  </data>
+  <data name="BackupCompleted" xml:space="preserve">
+    <value>Backup of solution completed.</value>
+  </data>
+  <data name="BackupSolution" xml:space="preserve">
+    <value>Backup solution</value>
+  </data>
+  <data name="BackupStarting" xml:space="preserve">
+    <value>Starting backup of solution...</value>
+  </data>
+  <data name="EnableBackup" xml:space="preserve">
+    <value>Select the checkbox below to enable a backup of your Visual Studio solution.</value>
+  </data>
+  <data name="ManualBackupMessage" xml:space="preserve">
+    <value>Please be sure you have backed up the solution and project files before proceeding!</value>
+  </data>
+  <data name="SolutionWillBeBackedUp" xml:space="preserve">
+    <value>If you've selected the 'Backup solution' option, the solution will be 
+backed up prior to upgrade.</value>
+  </data>
+  <data name="Template_ReleaseAllContentConfirmation" xml:space="preserve">
+    <value>A log file will be generated with the results of the upgrade.
+
+Note: {0}</value>
+  </data>
+  <data name="Template_SolutionBackupCompleted" xml:space="preserve">
+    <value>Your solution has been successfully backed up and is located in the folder '{0}'.</value>
+  </data>
+  <data name="ReleaseSpecificTitle_AddBinIncludeFile" xml:space="preserve">
+    <value>Add 'BinInclude.txt' file to Web project</value>
+  </data>
+  <data name="Template_ReleaseSpecificContent_AddBinIncludeFile" xml:space="preserve">
+    <value>This step will automatically add a file called '{0}' to the Web project. 
+
+This file is used during the release compilation process to allow the 
+specification of additional objects to be deployed. 
+
+For example, if your project contains an object called 
+YourCompany.XX.dll that you wish to be deployed in addition
+to all the other files that are deployed, you can add a line
+to the '{0}' as follows:
+
+YourCompany.XX.dll
+
+When the solution is built in 'Release' mode, any files specified
+in the file '{0}' will also be included in the final output.</value>
+  </data>
+  <data name="Template_ReleaseSpecificDesc_AddBinIncludeFile" xml:space="preserve">
+    <value>This step will automatically add a new file called '{0}'</value>
+  </data>
+  <data name="ReleaseSpecificTitle_ReportUpdates_For_2021_2" xml:space="preserve">
+    <value>Updates for how reports are generated.</value>
+  </data>
+  <data name="Template_ReleaseSpecificContent_ReportUpdates_For_2021_2" xml:space="preserve">
+    <value>This step will automatically add a reference to an executable program 
+called '{0}' to the Web project. 
+
+This application is used to generate reports within Sage 300.
+After this file is added as a reference to the web project,
+it is recommended that one manually replace the hard-coded 
+Sage 300 web path with the $(Sage300WebDir) macro. This can 
+be done by unloading the Web project, editing the file and 
+then reloading the Web project. The following is an example:
+			 
+Search for the following (Note: The file path may differ from this example)
+
+ C:\Sage\Sage300\Online\Web\bin\Sage.CA.SBS.ERP.Sage300.ExportReport.exe
+
+and change to
+
+ $(Sage300WebDir)\bin\Sage.CA.SBS.ERP.Sage300.ExportReport.exe</value>
+  </data>
+  <data name="Template_ReleaseSpecificDesc_ReportUpdates_For_2021_2" xml:space="preserve">
+    <value>This step will automatically add a new file called '{0}'</value>
+  </data>
+  <data name="ReleaseSpecificDescFinderAlterations" xml:space="preserve">
+    <value>This step will need to be done manually.</value>
+  </data>
+  <data name="ReleaseSpecificTitleFinderAlterations" xml:space="preserve">
+    <value>Finder Alterations</value>
+  </data>
+  <data name="UpdatesToFinderAlterationsAreAManualStep" xml:space="preserve">
+    <value>The updates to alter finders must be made manually.</value>
+  </data>
+  <data name="FinalAlterationsAreAManualStep" xml:space="preserve">
+    <value>The final alterations must be made manually.</value>
+  </data>
+  <data name="ReleaseSpecificDescNamespaceAndWebProjectUpdates" xml:space="preserve">
+    <value>This step will automatically update the namespace in some files as well as apply updates to the Web project file.</value>
+  </data>
+  <data name="ReleaseSpecificTitleNamespaceAndWebProjectUpdates" xml:space="preserve">
+    <value>Namespace and Web Project Updates</value>
+  </data>
+  <data name="ReleaseSpecificFinderAlterations" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseSpecificFinderAlterations.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ReleaseSpecificNamespaceAndWebProjectUpdates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseSpecificNamespaceAndWebProjectUpdates.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Namespace" xml:space="preserve">
+    <value>Namespace</value>
+  </data>
+  <data name="Template_SuccessfullyAddedFileToWebProject" xml:space="preserve">
+    <value>Successfully added {0} to {1}.</value>
+  </data>
+  <data name="Template_SuccessfullyUpdatedNamespaceInFile" xml:space="preserve">
+    <value>Successfully updated namespace in {0}.</value>
+  </data>
+  <data name="UnableToDetermineNamespace" xml:space="preserve">
+    <value>Error: The Upgrade Wizard was unable to determine the namespace.</value>
+  </data>
+  <data name="JavascriptMinificationUpdatesAreAManualStep" xml:space="preserve">
+    <value>The updates to the Javascript Minification Process must be made manually.</value>
+  </data>
+  <data name="ReleaseSpecificDescJavascriptMinificationUpdates" xml:space="preserve">
+    <value>This step will need to be done manually.</value>
+  </data>
+  <data name="ReleaseSpecificJavascriptMinificationUpdates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseSpecificJavascriptMinificationUpdates.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ReleaseSpecificTitleJavascriptMinificationUpdates" xml:space="preserve">
+    <value>Javascript Minification Updates</value>
+  </data>
+  <data name="Template_SuccessfullyUpdatedJQueryVersionInFile" xml:space="preserve">
+    <value>Successfully updated the version of jQuery from {0} to {1} in file {2}.</value>
+  </data>
+  <data name="Template_SetSolutionStartProject" xml:space="preserve">
+    <value>Successfully set {0} as the Solution startup project.</value>
+  </data>
+  <data name="Template_SetWebProjectStartFile" xml:space="preserve">
+    <value>Successfully set {0} as the Web project start file.</value>
+  </data>
+  <data name="sage300_logo_sq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sage300-logo-sq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AccpacPropsFileFoundInSolutionFolder" xml:space="preserve">
+    <value>An existing Accpac props file has been found in the current solution folder.</value>
+  </data>
+  <data name="NoAccpacPropsFilesFoundInSolution" xml:space="preserve">
+    <value>There were no existing Accpac props files found anywhere in the solution or projects.</value>
+  </data>
+  <data name="WebFormsFolderDoesNotExist" xml:space="preserve">
+    <value>The 'WebForms' folder does not exist.</value>
+  </data>
+  <data name="WebFormsFolderExists" xml:space="preserve">
+    <value>The 'WebForms' folder exists.</value>
+  </data>
+  <data name="ReleaseSpecificDescRemoveWebFormsFolder" xml:space="preserve">
+    <value>This step will automatically remove the deprecated 'WebForms' folder from the Web directory.</value>
+  </data>
+  <data name="ReleaseSpecificTitleRemoveWebFormsFolder" xml:space="preserve">
+    <value>Remove deprecated 'WebForms' folder</value>
+  </data>
+  <data name="WebFormsFolderRemovedSuccessfully" xml:space="preserve">
+    <value>The 'WebForms' folder has been successfully removed.</value>
+  </data>
+  <data name="IsSage300SDKSample" xml:space="preserve">
+    <value>This appears to be a Sage 300 SDK sample solution.</value>
+  </data>
+  <data name="IsSagePartnerSolution" xml:space="preserve">
+    <value>This appears to be a Sage partner solution.</value>
+  </data>
+  <data name="SyncAccpacLibrariesUnnecessary" xml:space="preserve">
+    <value>It is not necessary to update the Accpac props file for this solution and projects.</value>
+  </data>
+  <data name="Template_RemovedProjectItem" xml:space="preserve">
+    <value>Removed project item '{0}'.</value>
+  </data>
+  <data name="ReleaseSpecificRemoveWebFormsFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\content\ReleaseSpecificRemoveWebFormsFolder.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+</root>

@@ -1,0 +1,338 @@
+@*
+    The MIT License (MIT)
+    Copyright (c) 1994-2018 The Sage Group plc or its licensors.  All rights reserved.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of
+    this software and associated documentation files (the "Software"), to deal in
+    the Software without restriction, including without limitation the rights to use,
+    copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+    Software, and to permit persons to whom the Software is furnished to do so,
+    subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+    CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+    OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*@
+@using ValuedPartner.TU.Resources.Process;
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.HtmlHelperExtension
+@using Sage.CA.SBS.ERP.Sage300.Common.Resources
+@using ARCommonResx = Sage.CA.SBS.ERP.Sage300.AR.Resources.Forms.ARCommonResx
+@using CommonResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.CommonResx
+
+@model ValuedPartner.TU.Web.Areas.TU.Models.Process.ClearStatisticsViewModel<ValuedPartner.TU.Models.Process.ClearStatistics>
+
+<script type="text/javascript">
+    @Html.ConvertToJsVariableUsingNewtonSoft("ClearStatisticsViewModel", Model)
+    @Html.ConvertToJsVariableUsingNewtonSoft("screenName", ClearStatisticsResx.Entity);
+</script>
+
+@Html.Partial("~/Areas/Core/Views/Shared/_ProcessingStatus.cshtml")
+
+@{
+    bool calendarYear = Model.CalendarYear;
+    var className = "go-group";
+    if (calendarYear)
+    {
+        className = "input-group";
+    }
+}
+
+@{
+    bool salespersonCalendarYear = Model.SalesCalendarYear;
+    var classSalesName = "go-group";
+    if (salespersonCalendarYear)
+    {
+        classSalesName = "input-group";
+    }
+}
+
+@{
+    bool itemCalendarYear = Model.ItemCalendarYear;
+    var classItemName = "go-group";
+    if (itemCalendarYear)
+    {
+        classItemName = "input-group";
+    }
+}
+
+<div class="form-screen">
+    <div id="message"></div>
+    <header>
+        <section class="header-group-1">
+            <div class="header-wrapper">
+                <div class="header-headline">
+                    @Html.SageHeader1Label("lblClearStatistics", ClearStatisticsResx.Entity)
+                </div>
+            </div>
+        </section>
+    </header>
+    <div class="sub-section">
+        <div class="section-heading">
+            <div class="form-group">
+                <div class="ctrl-group">
+                    <div>
+                        @Html.KoSageCheckBox("Data_ClearCustomerStatistics", false, new { @sagechecked = "Data.bClearCustomerStatistics" }, new { })
+                        @Html.SageLabelFor(model => model.Data.ClearCustomerStatistics, new { @class = "bold" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body indented" data-bind="visible:Data.bClearCustomerStatistics">
+            <div class="form-group">
+                <div class="search-group ">
+                    @Html.SgFinderFor(m => m.Data.FromCustomerNumber,
+                          new { @sagevalue = "Data.FromCustomerNumber" },
+                          new { @class = "txt-upper", @id = "Data_FromCustomerNumber", @autofocus = "autofocus" },
+                          goButtonId: "btnGo", findButtonId: "btnFromCustomerFinder",
+                          labelText: CommonResx.From, labelHtmlAttrs: new { @id = "lblClearStatistics" },
+                          includeValidation: false)
+                </div>
+                <div class="search-group ">
+                    @Html.SgFinderFor(m => m.Data.ToCustomerNumber,
+                          new { @sagevalue = "Data.ToCustomerNumber" },
+                          new { @class = "txt-upper", @id = "Data_ToCustomerNumber" },
+                          goButtonId: "btnGo", findButtonId: "btnToCustomerFinder",
+                          labelText: CommonResx.To, labelHtmlAttrs: new { @id = "ClearStatistic_To" },
+                          includeValidation: false)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="@className">
+                    @Html.SgTextFor(m => m.Data.ThroughCustomerYear,
+                          new { @sagevalue = "Data.ThroughCustomerYear", @disable = "Data.isCustomerYearBool" },
+                          new { @id = "Data_ThroughCustomerYear", @formatTextbox = "numeric" }, labelText: ClearStatisticsResx.ThroughYear,
+                              labelHtmlAttrs: new { @id = "ClearStatistic_ThroughYear" },
+                              includeValidation: false)
+                    @if (!calendarYear)
+                    {
+                        @Html.KoSageButton("btnFindCustomerYear", null, new { @id = "btnFindCustomerYear", @class = "icon btn-search", @tabindex = "-1" })
+                    }
+                </div>
+                <div class="numeric-group">
+                    @Html.SgTextFor(m => m.Data.ThroughCustomerPeriod,
+                          new { @sagevalue = "Data.ThroughCustomerPeriod" },
+                          new { @id = "Data_ThroughCustomerPeriod", @maxlength = "2", @placeholder = 0, @prefixZero = "true", @formatTextbox = "numeric" },
+                          labelText: ARCommonResx.Period, labelHtmlAttrs: new { @id = "ClearStatistic_Period" },
+                          includeValidation: false)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-section">
+        <div class="section-heading">
+            <div class="form-group">
+                <div class="ctrl-group">
+                    <div>
+                        @Html.KoSageCheckBox("Data_ClearGroupStatistics", false, new { @sagechecked = "Data.bClearGroupStatistics" }, new { })
+                        @Html.SageLabelFor(model => model.Data.ClearGroupStatistics, new { @class = "bold" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body indented" data-bind="visible:Data.bClearGroupStatistics">
+            <div class="form-group">
+                <div class="search-group ">
+                    @Html.SgFinderFor(m => m.Data.FromGroupCode,
+                          new { @sagevalue = "Data.FromGroupCode" },
+                          new { @class = "txt-upper", @id = "Data_FromGroupCode", @formatTextbox = "alphaNumeric", @autofocus = "autofocus" },
+                          goButtonId: "btnGo", findButtonId: "btnFromCustomerGroupFinder",
+                          labelText: CommonResx.From, labelHtmlAttrs: new { @id = "lblClearStatistics" },
+                          includeValidation: false)
+                </div>
+                <div class="search-group ">
+                    @Html.SgFinderFor(m => m.Data.ToGroupCode,
+                          new { @sagevalue = "Data.ToGroupCode" },
+                          new { @class = "txt-upper", @id = "Data_ToGroupCode", @formatTextbox = "alphaNumeric" },
+                          goButtonId: "btnGo", findButtonId: "btnToCustomerGroupFinder",
+                          labelText: CommonResx.To, labelHtmlAttrs: new { @id = "ClearStatistic_To" },
+                          includeValidation: false)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="@className">
+                    @Html.SgTextFor(m => m.Data.ThroughGroupYear,
+                          new { @sagevalue = "Data.ThroughGroupYear", @disable = "Data.isCustomerGroupYearBool" },
+                          new { @id = "Data_ThroughGroupYear", @formatTextbox = "numeric" }, labelText: ClearStatisticsResx.ThroughYear,
+                              labelHtmlAttrs: new { @id = "ClearStatistic_ThroughYear2" },
+                              includeValidation: false)
+                    @if (!calendarYear)
+                    {
+                        @Html.KoSageButton("btnFindCustomerGroupYear", null, new { @id = "btnFindCustomerGroupYear", @class = "icon btn-search", @tabindex = "-1" })
+                    }
+                </div>
+                <div class="numeric-group">
+                    @Html.SgTextFor(m => m.Data.ThroughGroupPeriod,
+                          new { @sagevalue = "Data.ThroughGroupPeriod" },
+                          new { @id = "Data_ThroughGroupPeriod", @maxlength = "2", @placeholder = 0, @prefixZero = "true", @formatTextbox = "numeric" },
+                          labelText: ARCommonResx.Period, labelHtmlAttrs: new { @id = "ClearStatistic_Period2" },
+                          includeValidation: false)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-section">
+        <div class="section-heading">
+            <div class="form-group">
+                <div class="ctrl-group">
+                    <div>
+                        @Html.KoSageCheckBox("Data_ClearNationalAccountStatistics", false, new { @sagechecked = "Data.bClearNationalAccountStatistics" }, new { })
+                        @Html.SageLabelFor(model => model.Data.ClearNationalAccountStatistics, new { @class = "bold" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body indented" data-bind="visible:Data.bClearNationalAccountStatistics">
+            <div class="form-group">
+                <div class="search-group ">
+                    @Html.SgFinderFor(m => m.Data.FromNationalAccount,
+                          new { @sagevalue = "Data.FromNationalAccount" },
+                          new { @class = "txt-upper", @id = "Data_FromNationalAccount", @autofocus = "autofocus" },
+                          goButtonId: "btnGo", findButtonId: "btnFromNationalAccountFinder",
+                          labelText: CommonResx.From, labelHtmlAttrs: new { @id = "lblClearStatistics" },
+                          includeValidation: false)
+                </div>
+                <div class="search-group ">
+                    @Html.SgFinderFor(m => m.Data.ToNationalAccount,
+                          new { @sagevalue = "Data.ToNationalAccount" },
+                          new { @class = "txt-upper", @id = "Data_ToNationalAccount" },
+                          goButtonId: "btnGo", findButtonId: "btnToNationalAccountFinder",
+                          labelText: CommonResx.To, labelHtmlAttrs: new { @id = "ClearStatistic_To2" },
+                          includeValidation: false)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="@className">
+                    @Html.SgTextFor(m => m.Data.ThroughNationalAccountYear,
+                          new { @sagevalue = "Data.ThroughNationalAccountYear", @disable = "Data.isNationalYearBool" },
+                          new { @id = "Data_ThroughNationalAccountYear", @formatTextbox = "numeric" }, labelText: ClearStatisticsResx.ThroughYear,
+                              labelHtmlAttrs: new { @id = "ClearStatistic_ThroughYear3" },
+                              includeValidation: false)
+                    @if (!calendarYear)
+                    {
+                        @Html.KoSageButton("btnFindNationalAccountYear", null, new { @id = "btnFindNationalAccountYear", @class = "icon btn-search", @tabindex = "-1" })
+                    }
+                </div>
+                <div class="numeric-group">
+                    @Html.SgTextFor(m => m.Data.ThroughNationalAccountPeriod,
+                          new { @sagevalue = "Data.ThroughNationalAccountPeriod" },
+                          new { @id = "Data_ThroughNationalAccountPeriod", @maxlength = "2", @placeholder = 0, @prefixZero = "true", @formatTextbox = "numeric" },
+                          labelText: ARCommonResx.Period, labelHtmlAttrs: new { @id = "ClearStatistic_Period3" },
+                          includeValidation: false)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-section">
+        <div class="section-heading">
+            <div class="form-group">
+                <div class="ctrl-group">
+                    <div>
+                        @Html.KoSageCheckBox("Data_ClearSalespersonStatistics", false, new { @sagechecked = "Data.bClearSalespersonStatistics" }, new { })
+                        @Html.SageLabelFor(model => model.Data.ClearSalespersonStatistics, new { @class = "bold" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body indented" data-bind="visible:Data.bClearSalespersonStatistics">
+            <div class="form-group">
+                <div class="search-group ">
+                    @Html.SgFinderFor(m => m.Data.FromSalesperson,
+                          new { @sagevalue = "Data.FromSalesperson" },
+                          new { @class = "txt-upper", @id = "Data_FromSalesperson", @formatTextbox = "alphaNumeric" },
+                          goButtonId: "btnGo", findButtonId: "btnFromSalespersonFinder",
+                          labelText: CommonResx.From, labelHtmlAttrs: new { @id = "lblClearStatistics" },
+                          includeValidation: false)
+                </div>
+                <div class="search-group ">
+                    @Html.SgFinderFor(m => m.Data.ToSalesperson,
+                          new { @sagevalue = "Data.ToSalesperson" },
+                          new { @class = "txt-upper", @id = "Data_ToSalesperson", @formatTextbox = "alphaNumeric" },
+                          goButtonId: "btnGo", findButtonId: "btnToSalespersonFinder",
+                          labelText: CommonResx.To, labelHtmlAttrs: new { @id = "ClearStatistic_To3" },
+                          includeValidation: false)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="@classSalesName">
+                    @Html.SgTextFor(m => m.Data.ThroughSalespersonYear,
+                          new { @sagevalue = "Data.ThroughSalespersonYear", @disable = "Data.isSalespersonYearBool" },
+                          new { @id = "Data_ThroughSalespersonYear", @formatTextbox = "numeric" }, labelText: ClearStatisticsResx.ThroughYear,
+                              labelHtmlAttrs: new { @id = "ClearStatistic_ThroughYear4" },
+                              includeValidation: false)
+                    @if (!salespersonCalendarYear)
+                    {
+                        @Html.KoSageButton("btnFindSalespersonYear", null, new { @id = "btnFindSalespersonYear", @class = "icon btn-search", @tabindex = "-1" })
+                    }
+                </div>
+                <div class="numeric-group">
+                    @Html.SgTextFor(m => m.Data.ThroughSalespersonPeriod,
+                          new { @sagevalue = "Data.ThroughSalespersonPeriod" },
+                          new { @id = "Data_ThroughSalespersonPeriod", @maxlength = "2", @placeholder = 0, @prefixZero = "true", @formatTextbox = "numeric" },
+                          labelText: ARCommonResx.Period, labelHtmlAttrs: new { @id = "ClearStatistic_Period4" },
+                          includeValidation: false)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-section">
+        <div class="section-heading">
+            <div class="form-group">
+                <div class="ctrl-group">
+                    <div>
+                        @Html.KoSageCheckBox("Data_ClearItemStatistics", false, new { @sagechecked = "Data.bClearItemStatistics" }, new { })
+                        @Html.SageLabelFor(model => model.Data.ClearItemStatistics, new { @class = "bold" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body indented" data-bind="visible:Data.bClearItemStatistics">
+            <div class="form-group">
+                <div class="search-group ">
+                    @Html.SgFinderFor(m => m.Data.FromItemNumber,
+                          new { @sagevalue = "Data.FromItemNumber" },
+                          new { @class = "txt-upper", @id = "Data_FromItem", @autofocus = "autofocus" },
+                          goButtonId: "btnGo", findButtonId: "btnFromItemFinder",
+                          labelText: CommonResx.From, labelHtmlAttrs: new { @id = "lblClearStatistics" },
+                          includeValidation: false)
+                </div>
+                <div class="search-group ">
+                    @Html.SgFinderFor(m => m.Data.ToItemNumber,
+                          new { @sagevalue = "Data.ToItemNumber" },
+                          new { @class = "txt-upper", @id = "Data_ToItem" },
+                          goButtonId: "btnGo", findButtonId: "btnToItemFinder",
+                          labelText: CommonResx.To, labelHtmlAttrs: new { @id = "ClearStatistic_To4" },
+                          includeValidation: false)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="@classItemName">
+                    @Html.SgTextFor(m => m.Data.ThroughItemYear,
+                          new { @sagevalue = "Data.ThroughItemYear", @disable = "Data.isItemYearBool" },
+                          new { @id = "Data_ThroughItemYear", @formatTextbox = "numeric" }, labelText: ClearStatisticsResx.ThroughYear,
+                              labelHtmlAttrs: new { @id = "ClearStatistic_ThroughYear5" },
+                              includeValidation: false)
+                    @if (!itemCalendarYear)
+                    {
+                        @Html.KoSageButton("btnFindItemYear", null, new { @id = "btnFindItemYear", @class = "icon btn-search", @tabindex = "-1" })
+                    }
+                </div>
+                <div class="numeric-group">
+                    @Html.SgTextFor(m => m.Data.ThroughItemPeriod,
+                          new { @sagevalue = "Data.ThroughItemPeriod" },
+                          new { @id = "Data_ThroughItemPeriod", @maxlength = "2", @placeholder = 0, @prefixZero = "true", @formatTextbox = "numeric" },
+                          labelText: ARCommonResx.Period, labelHtmlAttrs: new { @id = "ClearStatistic_Period5" },
+                          includeValidation: false)
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer-group-1">
+        @Html.KoSageButton("btnProcess", null, new { @id = "btnProcess", @class = "btn btn-primary", @value = CommonResx.Process })
+    </section>
+</div>

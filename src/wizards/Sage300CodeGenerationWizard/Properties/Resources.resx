@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GenerateDynamicEnablementTip" xml:space="preserve">
+    <value>Optionally generate the 'DynamicAttributes' property in the Model Fields file. This provides a reverse mapping of the Business View fields to the Model properties for the fields in the Business View which have the 'CheckEditable' attribute.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ProgressError.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CompositeView" xml:space="preserve">
+    <value>Composite View</value>
+  </data>
+  <data name="CodeTypeTip" xml:space="preserve">
+    <value>Select a Code Type to generate code</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Data Type</value>
+  </data>
+  <data name="InvalidCount" xml:space="preserve">
+    <value>At least one field is required.</value>
+  </data>
+  <data name="GenerateFinder" xml:space="preserve">
+    <value>Generate Finder</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+    <comment>Header Desc for Status column</comment>
+  </data>
+  <data name="GenerateIfExist" xml:space="preserve">
+    <value>Generate if Files Already Exist</value>
+  </data>
+  <data name="IsCalculated" xml:space="preserve">
+    <value>Calculated</value>
+  </data>
+  <data name="InvalidSettingRequiredField" xml:space="preserve">
+    <value>The {0} has not been specified.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="UserTip" xml:space="preserve">
+    <value>A valid Sage 300 user</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Ini Files (.ini)|*.ini|All Files (*.*)|*.*</value>
+    <comment>Filter for Open Dialog</comment>
+  </data>
+  <data name="IsDynamicEnablement" xml:space="preserve">
+    <value>Dynamic Enablement</value>
+  </data>
+  <data name="GenerateIfExistTip" xml:space="preserve">
+    <value>Optionally generate the files if they already exist in which case they will be overwritten else the existing files will be used.</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Company:</value>
+  </data>
+  <data name="InvalidSettingModel" xml:space="preserve">
+    <value>The Properties contain one field with the same name as the Model. Please change the Model Name.</value>
+  </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="Resx" xml:space="preserve">
+    <value>Resx</value>
+  </data>
+  <data name="GenerateFinderTip" xml:space="preserve">
+    <value>Optionally generate a finder for the Model being generated.</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="GenerateEnumsInSingleFile" xml:space="preserve">
+    <value>Generate Enumerations in Single File</value>
+  </data>
+  <data name="ModelName" xml:space="preserve">
+    <value>Model Name:</value>
+  </data>
+  <data name="InvalidSettingCredentials" xml:space="preserve">
+    <value>Unable to establish connection with entered credentials.</value>
+  </data>
+  <data name="InvalidSettingEntityName" xml:space="preserve">
+    <value>The Properties contain a field with the name of 'EntityName'. Please rename the field as 'EntityName' is reserved for a public constant in the model.</value>
+  </data>
+  <data name="IsReadOnly" xml:space="preserve">
+    <value>Read Only</value>
+  </data>
+  <data name="EntityName" xml:space="preserve">
+    <value>Entity Name:</value>
+  </data>
+  <data name="AddRow" xml:space="preserve">
+    <value>Add Row</value>
+  </data>
+  <data name="GenerateDynamicEnablement" xml:space="preserve">
+    <value>Generate Dynamic Enablement</value>
+  </data>
+  <data name="ReportProgramIdTip" xml:space="preserve">
+    <value>Enter name for model mapper</value>
+  </data>
+  <data name="PasswordTip" xml:space="preserve">
+    <value>A valid Sage 300 password</value>
+  </data>
+  <data name="CodeTypeFilesTip" xml:space="preserve">
+    <value>Based upon the Code Type selected, Interface files, a Service file, a Repository file, a View Model file, Controller files and Razor View files (stubs only for certain Code Types) may also be generated.</value>
+  </data>
+  <data name="EntityCompositionGridTip" xml:space="preserve">
+    <value>For Header-Detail, the Accpac Views to be composed for the entity</value>
+  </data>
+  <data name="CompositionTip" xml:space="preserve">
+    <value>Add, modify, and/or delete composition information for certain code types</value>
+  </data>
+  <data name="ViewName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="ErrorCreatingFile" xml:space="preserve">
+    <value>Error creating {0}</value>
+    <comment>Error creating resx file</comment>
+  </data>
+  <data name="EntitiesInstructions" xml:space="preserve">
+    <value>Right-Click on '{0}' below to Add Entity/Delete Entities or any entity listed below to Add Entity (Header-Detail only), Edit Entity or Delete Entity.</value>
+  </data>
+  <data name="EntityTip" xml:space="preserve">
+    <value>The fields describe the entity and provide prefixing for the files being created </value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="StepDescriptionEntities" xml:space="preserve">
+    <value>The {0} Entities are used to generate code.</value>
+  </data>
+  <data name="AddEntity" xml:space="preserve">
+    <value>Add Entity</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="CompanyTip" xml:space="preserve">
+    <value>A valid Sage 300 company</value>
+  </data>
+  <data name="WikiLink" xml:space="preserve">
+    <value>http://bcraccwiki/wiki/Class_Generation_Utility</value>
+    <comment>Link to help on wiki</comment>
+  </data>
+  <data name="InvalidEntitiesCount" xml:space="preserve">
+    <value>At least one entity is required.</value>
+  </data>
+  <data name="StepDescriptionCodeType" xml:space="preserve">
+    <value>This wizard will generate Web UI code for the Sage 300 application.  </value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="InvalidFieldBlank" xml:space="preserve">
+    <value>There is a field that does not contain a value.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="GenerateEnumsInSingleFileTip" xml:space="preserve">
+    <value>Optionally generate the enumerations in a single file as opposed to each enumeration having its own file.</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>File Name</value>
+    <comment>Header Desc for FileName column</comment>
+  </data>
+  <data name="OptionsTip" xml:space="preserve">
+    <value>Options for code generation</value>
+  </data>
+  <data name="ReportKeys" xml:space="preserve">
+    <value>Reports:</value>
+  </data>
+  <data name="AlternateName" xml:space="preserve">
+    <value>Alternate Name</value>
+  </data>
+  <data name="StepDescriptionGenerateCode" xml:space="preserve">
+    <value>Ready to generate {0} code!</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="IsKey" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="ReportIniDialogTip" xml:space="preserve">
+    <value>Lookup a Sage 300 report .ini file</value>
+  </data>
+  <data name="ViewIdTip" xml:space="preserve">
+    <value>A valid Sage 300 business view </value>
+  </data>
+  <data name="ViewNameTip" xml:space="preserve">
+    <value>Defaulted from the business view and can be overridden</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="GenerateClientFiles" xml:space="preserve">
+    <value>Generate Client Files (Controllers, Razor Views, JavaScript)</value>
+  </data>
+  <data name="Generate" xml:space="preserve">
+    <value>Generate</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="Dash" xml:space="preserve">
+    <value> - </value>
+  </data>
+  <data name="EntityNameTip" xml:space="preserve">
+    <value>Enter name for the entity</value>
+  </data>
+  <data name="IsCommon" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="Blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Blank24.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CodeGenerationWizardTitle_Template" xml:space="preserve">
+    <value>Code Generation Wizard - V{0}</value>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>Module:</value>
+  </data>
+  <data name="CodeType" xml:space="preserve">
+    <value>Code Type:</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Step </value>
+  </data>
+  <data name="ResxNameTip" xml:space="preserve">
+    <value>The name is defaulted from the Business View (if applicable) and must have the "Resx" suffix. If not supplied, it will be appended. The main Resx file will be for English and will contain the descriptions for the Model properties from the Business View. Other Resx files will be generated only if the languages were selected when the solution was created and will only contain keys and no values.</value>
+  </data>
+  <data name="ContainerNameTip" xml:space="preserve">
+    <value>Enter a name to be used as the container name for the entities</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="IsNumeric" xml:space="preserve">
+    <value>Numeric</value>
+  </data>
+  <data name="GeneratingFile" xml:space="preserve">
+    <value>Generating File {0}...</value>
+  </data>
+  <data name="StepTitleGeneratedCode" xml:space="preserve">
+    <value>Generated Code</value>
+  </data>
+  <data name="UnknownCodeFilesTip" xml:space="preserve">
+    <value>All Code Types will, at a minimum, generate a Model file, a Model Fields file, a Model Mapper file and Enumeration files (based upon Presentation Lists in the Business View).</value>
+  </data>
+  <data name="HeaderNodeDefinition" xml:space="preserve">
+    <value>Either the header does not have a child view or there is more than one header defined.</value>
+  </data>
+  <data name="PropertiesTip" xml:space="preserve">
+    <value>Add, modify, and/or delete property information for most code types</value>
+  </data>
+  <data name="ServerField" xml:space="preserve">
+    <value>Field Name</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="FileExists" xml:space="preserve">
+    <value>The file '{0}' already exists. Overwrite this file?</value>
+  </data>
+  <data name="InvalidSettingContainerName" xml:space="preserve">
+    <value>The entities contain one entity with the same name as the Container Name. Please change the Container Name or the Entity Name.</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>Property Name</value>
+  </data>
+  <data name="ReportIniFile" xml:space="preserve">
+    <value>Ini File:</value>
+  </data>
+  <data name="InvalidFieldDuplicate" xml:space="preserve">
+    <value>The field '{0}' is duplicated and fields must be unique.</value>
+  </data>
+  <data name="InvalidSolution" xml:space="preserve">
+    <value>The solution is not a valid Sage 300 solution.</value>
+  </data>
+  <data name="InvalidReportSetting" xml:space="preserve">
+    <value>The Report .INI field has either not been specified or is invalid</value>
+  </data>
+  <data name="Browser" xml:space="preserve">
+    <value>IEXPLORE.EXE</value>
+    <comment>Browser to use</comment>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="InvalidSettingCompositionNotAnEntity" xml:space="preserve">
+    <value>A composition view has been specified but an entity for the view has not</value>
+  </data>
+  <data name="ImportSetting24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImportSetting24.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Success" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ProgressSuccess.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportKeysTip" xml:space="preserve">
+    <value>Select a report from the .ini file</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ModelNameTip" xml:space="preserve">
+    <value>Enter name for the model</value>
+  </data>
+  <data name="DeleteRow" xml:space="preserve">
+    <value>Delete Row</value>
+  </data>
+  <data name="DeleteEntity" xml:space="preserve">
+    <value>Delete Entity</value>
+  </data>
+  <data name="ReportProgramId" xml:space="preserve">
+    <value>Program ID:</value>
+  </data>
+  <data name="StepTitleGenerateCode" xml:space="preserve">
+    <value>Generate {0} Code</value>
+  </data>
+  <data name="DeleteRows" xml:space="preserve">
+    <value>DeleteRows</value>
+  </data>
+  <data name="InvalidEntityDuplicate" xml:space="preserve">
+    <value>The entity being added already exists.</value>
+  </data>
+  <data name="DeleteEntities" xml:space="preserve">
+    <value>Delete Entities</value>
+  </data>
+  <data name="ResxName" xml:space="preserve">
+    <value>Resx Name:</value>
+  </data>
+  <data name="GenerateClientFilesTip" xml:space="preserve">
+    <value>Optionally generate the client files for a business view. This provides the ability to generate a model, mappers, repository, etc. for a business view that do not require these client files.</value>
+  </data>
+  <data name="StepTitleCodeType" xml:space="preserve">
+    <value>Select Code Type and Credentials</value>
+  </data>
+  <data name="InvalidResxName" xml:space="preserve">
+    <value>The Resx Name must end with 'Resx'.</value>
+  </data>
+  <data name="IsAlphaNumeric" xml:space="preserve">
+    <value>Aplhanumeric</value>
+  </data>
+  <data name="GenerateTip" xml:space="preserve">
+    <value>The entities will be generated or referenced based upon the following content:</value>
+  </data>
+  <data name="ReportIniFileTip" xml:space="preserve">
+    <value>Enter or select a Sage 300 report .ini file</value>
+  </data>
+  <data name="VersionTip" xml:space="preserve">
+    <value>A valid Sage 300 version</value>
+  </data>
+  <data name="ContainerName" xml:space="preserve">
+    <value>Container Name:</value>
+  </data>
+  <data name="InvalidProjects" xml:space="preserve">
+    <value>The solution does not contain all required Sage 300 projects.</value>
+  </data>
+  <data name="EditContainerName" xml:space="preserve">
+    <value>Edit Container Name</value>
+  </data>
+  <data name="ContainerNameRequired" xml:space="preserve">
+    <value>Container Name Required</value>
+  </data>
+  <data name="Composition" xml:space="preserve">
+    <value>Composition</value>
+  </data>
+  <data name="StepDescriptionGeneratedCode" xml:space="preserve">
+    <value>Please review these files for accuracy and TODO resolutions.</value>
+  </data>
+  <data name="IsUpperCase" xml:space="preserve">
+    <value>Uppercase</value>
+  </data>
+  <data name="ViewId" xml:space="preserve">
+    <value>View ID:</value>
+  </data>
+  <data name="Include" xml:space="preserve">
+    <value>Include</value>
+  </data>
+  <data name="ModuleTip" xml:space="preserve">
+    <value>Select a modue from the list</value>
+  </data>
+  <data name="EditEntity" xml:space="preserve">
+    <value>Edit Entity</value>
+  </data>
+  <data name="CodeTypeDescriptionTip" xml:space="preserve">
+    <value>A Code Type is based upon the Repository Type that will be used for the Business View or Report.</value>
+  </data>
+  <data name="StepTitleEntities" xml:space="preserve">
+    <value>Add/Edit {0} Entities</value>
+  </data>
+  <data name="CodeGenerationWizard" xml:space="preserve">
+    <value>Code Generation Wizard</value>
+  </data>
+  <data name="InvalidVersion" xml:space="preserve">
+    <value>The Wizard is incompatible with the installed Sage 300 libraries. Please un-register the wizard and register the wizard that is compatible with the installed Sage 300 libraries.</value>
+  </data>
+  <data name="InvalidGridView" xml:space="preserve">
+    <value>The property cannot be dropped onto this grid because the view does not support a revision list.</value>
+  </data>
+  <data name="AvailableFields" xml:space="preserve">
+    <value>Available Fields</value>
+  </data>
+  <data name="Dropdown" xml:space="preserve">
+    <value>Drop Down</value>
+  </data>
+  <data name="GenerateUI" xml:space="preserve">
+    <value>Generate UI</value>
+  </data>
+  <data name="GenerateUICodeInstructions" xml:space="preserve">
+    <value>Select the 'Mock' button to invoke the UI Designer for a Mocked CSHTML file or select the 'Layout' button to invoke the UI Designer for a WYSIWG UI editor for creating a basic layout.</value>
+  </data>
+  <data name="GridContainer" xml:space="preserve">
+    <value>Add Grid Control</value>
+  </data>
+  <data name="RadioButtons" xml:space="preserve">
+    <value>Radio Buttons</value>
+  </data>
+  <data name="StepDescriptionGenerateUICode" xml:space="preserve">
+    <value>The Entities are used to generate UI code.</value>
+  </data>
+  <data name="StepTitleGenerateUICode" xml:space="preserve">
+    <value>Generate a UI layout</value>
+  </data>
+  <data name="TabControl" xml:space="preserve">
+    <value>Add Tab Control</value>
+  </data>
+  <data name="AddFinderButtonTip" xml:space="preserve">
+    <value>Select to search for a JavaScript file containing finder definitions</value>
+  </data>
+  <data name="Control" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>Display:</value>
+  </data>
+  <data name="DisplayTip" xml:space="preserve">
+    <value>Select the finder property to be displayed or select 'None' for no displayed property</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>File:</value>
+  </data>
+  <data name="FileTip" xml:space="preserve">
+    <value>Specify the JavaScript file which contains finder definitions</value>
+  </data>
+  <data name="Finder" xml:space="preserve">
+    <value>Config:</value>
+  </data>
+  <data name="FinderTip" xml:space="preserve">
+    <value>Select the finder configuration to be associated with the current property</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="TextTip" xml:space="preserve">
+    <value>Defaulted from the business view and certain widgets allow value to be overridden</value>
+  </data>
+  <data name="StepDescriptionFinder" xml:space="preserve">
+    <value>Select key and display fields for the finder</value>
+  </data>
+  <data name="StepTitleFinder" xml:space="preserve">
+    <value>Create entity finder</value>
+  </data>
+  <data name="TimeOnly" xml:space="preserve">
+    <value>Time Only</value>
+  </data>
+  <data name="PropType" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="PropTypeTip" xml:space="preserve">
+    <value>Widget type for the property</value>
+  </data>
+  <data name="FinderTab" xml:space="preserve">
+    <value>Finder</value>
+  </data>
+  <data name="FinderTabTip" xml:space="preserve">
+    <value>Finder config properties</value>
+  </data>
+  <data name="HamburgerTab" xml:space="preserve">
+    <value>Hamburger</value>
+  </data>
+  <data name="HamburgerTabTip" xml:space="preserve">
+    <value>Hamburger config properties</value>
+  </data>
+  <data name="InfoTab" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="InfoTabTip" xml:space="preserve">
+    <value>Info config properties</value>
+  </data>
+  <data name="Textbox" xml:space="preserve">
+    <value>Textbox</value>
+  </data>
+  <data name="FinderUrlFound" xml:space="preserve">
+    <value>One or more finders have a 'url' property in the definition. For a debug session to properly display these finders, please ensure that the finder's module assemblies (i.e., BusinessRepository, Interfaces, Modules, Resources, Services and Web) are added to the web project if they are not already added.</value>
+  </data>
+  <data name="InvalidFinderConfig" xml:space="preserve">
+    <value>A finder has been designed for a property but a finder definition has not been selected. Please select a finder definition.</value>
+  </data>
+  <data name="ButtonControl" xml:space="preserve">
+    <value>Add Button Control</value>
+  </data>
+  <data name="Checkbox" xml:space="preserve">
+    <value>Checkbox</value>
+  </data>
+  <data name="GenerateGridModel" xml:space="preserve">
+    <value>Generate Grid Model</value>
+  </data>
+  <data name="sage300_logo_sq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sage300-logo-sq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InvalidGridViewProperties" xml:space="preserve">
+    <value>The property cannot be dropped onto this grid because all grid properties must be from the same business view.</value>
+  </data>
+  <data name="InvalidNoGrid" xml:space="preserve">
+    <value>A grid must be specified in the 'Generate a UI layout' step for a Header-Detail Repository type.</value>
+  </data>
+  <data name="InvalidNoGridProperties" xml:space="preserve">
+    <value>Grid '{0}' does not have any added properties and cannot be an empty container.</value>
+  </data>
+  <data name="InvalidNoUI" xml:space="preserve">
+    <value>A layout with no UI elements specified will no longer generate a default layout. Use the 'Generate a UI layout' step to specify a layout (a minimum of 1 property or control must be specified).</value>
+  </data>
+  <data name="StepWebApiCredentials" xml:space="preserve">
+    <value>Enter Credentials</value>
+  </data>
+  <data name="StepWebApiCredentialsDesc" xml:space="preserve">
+    <value>This wizard will generate Web API code.</value>
+  </data>
+  <data name="ResourceName" xml:space="preserve">
+    <value>Resource Name</value>
+  </data>
+  <data name="ResourceNameTip" xml:space="preserve">
+    <value>The name is defaulted from the Business View</value>
+  </data>
+  <data name="Verbs" xml:space="preserve">
+    <value>HTTP Verbs</value>
+  </data>
+  <data name="VerbsTip" xml:space="preserve">
+    <value>Select verbs permitted on this entity</value>
+  </data>
+  <data name="Web" xml:space="preserve">
+    <value>Web</value>
+  </data>
+  <data name="WebAPI" xml:space="preserve">
+    <value>Web API</value>
+  </data>
+</root>

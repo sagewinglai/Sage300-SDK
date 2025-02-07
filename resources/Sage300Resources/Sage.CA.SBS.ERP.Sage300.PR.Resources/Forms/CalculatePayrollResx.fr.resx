@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BiweeklyEDBiweekly" xml:space="preserve">
+    <value>G/R aux 2 semaines - Aux 2 semaines</value>
+  </data>
+  <data name="WeeklyED22Periods" xml:space="preserve">
+    <value>22 par an</value>
+  </data>
+  <data name="Selection" xml:space="preserve">
+    <value>Sélection</value>
+  </data>
+  <data name="SemimonthlyEDMonthly" xml:space="preserve">
+    <value>G/R bimensuel - Mensuelle</value>
+  </data>
+  <data name="QuarterlyEDQuarterly" xml:space="preserve">
+    <value>G/R trimestriel - Trimestrielle</value>
+  </data>
+  <data name="EndingClass4" xml:space="preserve">
+    <value>À classe 4</value>
+  </data>
+  <data name="PayrollRunDate" xml:space="preserve">
+    <value>Date de paie</value>
+  </data>
+  <data name="EmpDaily" xml:space="preserve">
+    <value>Empl.- Quotidienne</value>
+  </data>
+  <data name="Num13PeriodsED13Periods" xml:space="preserve">
+    <value>G/R 13 périodes - 13 périodes</value>
+  </data>
+  <data name="BiweeklyED22Periods" xml:space="preserve">
+    <value>G/R aux 2 semaines - 22 périodes</value>
+  </data>
+  <data name="DailyED10Periods" xml:space="preserve">
+    <value>10 par an</value>
+  </data>
+  <data name="Num10PeriodsED10Periods" xml:space="preserve">
+    <value>G/R 10 périodes - 10 périodes</value>
+  </data>
+  <data name="EmpMonthly" xml:space="preserve">
+    <value>Empl.- Mensuelle</value>
+  </data>
+  <data name="EndingEmployee" xml:space="preserve">
+    <value>À l'employé</value>
+  </data>
+  <data name="BeginningClass1" xml:space="preserve">
+    <value>De classe 1</value>
+  </data>
+  <data name="SemimonthlyPeriodStartDate" xml:space="preserve">
+    <value>Bimensuelle</value>
+  </data>
+  <data name="DailyEDQuarterly" xml:space="preserve">
+    <value>Trimestrielle</value>
+  </data>
+  <data name="Emp10Periods" xml:space="preserve">
+    <value>Empl.- 10 périodes</value>
+  </data>
+  <data name="StartDates" xml:space="preserve">
+    <value>Dates de début</value>
+  </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Calculer la paie</value>
+  </data>
+  <data name="EmpSemimonthly" xml:space="preserve">
+    <value>Empl.- Bimensuelle</value>
+  </data>
+  <data name="BeginningClass3" xml:space="preserve">
+    <value>De classe 3</value>
+  </data>
+  <data name="Emp22Periods" xml:space="preserve">
+    <value>Empl.- 22 périodes</value>
+  </data>
+  <data name="Num22PeriodsEDQuarterly" xml:space="preserve">
+    <value>G/R 22 périodes - Trimestrielle</value>
+  </data>
+  <data name="Num13PeriodsEDQuarterly" xml:space="preserve">
+    <value>G/R 13 périodes - Trimestrielle</value>
+  </data>
+  <data name="EmpWeekly" xml:space="preserve">
+    <value>Empl.- Hebdomadaire</value>
+  </data>
+  <data name="IgnoreNegativeCheques" xml:space="preserve">
+    <value>Ignorer les chèques négatifs</value>
+  </data>
+  <data name="SelectionList" xml:space="preserve">
+    <value>Liste de sélection</value>
+  </data>
+  <data name="Num13PeriodsPeriodStartDate" xml:space="preserve">
+    <value>13 périodes de paie</value>
+  </data>
+  <data name="MonthlyPeriodStartDate" xml:space="preserve">
+    <value>Mensuelle</value>
+  </data>
+  <data name="Num10PeriodsPeriodStartDate" xml:space="preserve">
+    <value>10 périodes de paie</value>
+  </data>
+  <data name="QuarterlyPeriodStartDate" xml:space="preserve">
+    <value>Trimestrielle</value>
+  </data>
+  <data name="CalculationOption" xml:space="preserve">
+    <value>Traiter</value>
+  </data>
+  <data name="Num22PeriodsED13Periods" xml:space="preserve">
+    <value>G/R 22 périodes - 13 périodes</value>
+  </data>
+  <data name="OptionalFields" xml:space="preserve">
+    <value>Champs optionnels</value>
+  </data>
+  <data name="AllChecks" xml:space="preserve">
+    <value>Tous les chèques</value>
+  </data>
+  <data name="Num13PeriodsED10Periods" xml:space="preserve">
+    <value>G/R 13 périodes - 10 périodes</value>
+  </data>
+  <data name="DailyEDFrequency" xml:space="preserve">
+    <value>Fréquence</value>
+  </data>
+  <data name="DailyEDPay" xml:space="preserve">
+    <value>Payer?</value>
+  </data>
+  <data name="DailyEDDaily" xml:space="preserve">
+    <value>Quotidienne</value>
+  </data>
+  <data name="DailyEDSemimonthly" xml:space="preserve">
+    <value>Bimensuelle</value>
+  </data>
+  <data name="WeeklyEDSemimonthly" xml:space="preserve">
+    <value>Bimensuelle</value>
+  </data>
+  <data name="Emp13Periods" xml:space="preserve">
+    <value>Empl.- 13 périodes</value>
+  </data>
+  <data name="TaxVersion" xml:space="preserve">
+    <value>Version de l'impôt</value>
+  </data>
+  <data name="EndingClass1" xml:space="preserve">
+    <value>À classe 1</value>
+  </data>
+  <data name="IgnoreZeroAndNegativeCheques" xml:space="preserve">
+    <value>Ignorer les chèques nuls et négatifs</value>
+  </data>
+  <data name="WeeklyEDBiweekly" xml:space="preserve">
+    <value>Aux 2 semaines</value>
+  </data>
+  <data name="BiweeklyED10Periods" xml:space="preserve">
+    <value>G/R aux 2 semaines - 10 périodes</value>
+  </data>
+  <data name="DeleteCurrentActivity" xml:space="preserve">
+    <value>Supprimer calcul en cours</value>
+  </data>
+  <data name="DailyEDMonthly" xml:space="preserve">
+    <value>Mensuelle</value>
+  </data>
+  <data name="SemimonthlyED13Periods" xml:space="preserve">
+    <value>G/R bimensuel - 13 périodes</value>
+  </data>
+  <data name="ProcessCommandCode" xml:space="preserve">
+    <value>Code traitement opération</value>
+  </data>
+  <data name="SemimonthlyEDSemimonthly" xml:space="preserve">
+    <value>G/R bimensuel - Bimensuelle</value>
+  </data>
+  <data name="BiweeklyED13Periods" xml:space="preserve">
+    <value>G/R aux 2 semaines - 13 périodes</value>
+  </data>
+  <data name="DailyEDBiweekly" xml:space="preserve">
+    <value>Aux 2 semaines</value>
+  </data>
+  <data name="EndingClass3" xml:space="preserve">
+    <value>À classe 3</value>
+  </data>
+  <data name="DailyEDWeekly" xml:space="preserve">
+    <value>Hebdomadaire</value>
+  </data>
+  <data name="WeeklyED10Periods" xml:space="preserve">
+    <value>10 par an</value>
+  </data>
+  <data name="BeginningEmployee" xml:space="preserve">
+    <value>De l’employé</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>Fréquence</value>
+  </data>
+  <data name="Num22PeriodsED22Periods" xml:space="preserve">
+    <value>G/R 22 périodes - 22 périodes</value>
+  </data>
+  <data name="WeeklyEDQuarterly" xml:space="preserve">
+    <value>Trimestrielle</value>
+  </data>
+  <data name="DailyED22Periods" xml:space="preserve">
+    <value>22 par an</value>
+  </data>
+  <data name="BiweeklyEDQuarterly" xml:space="preserve">
+    <value>G/R aux 2 semaines - Trimestrielle</value>
+  </data>
+  <data name="Num22PeriodsPeriodStartDate" xml:space="preserve">
+    <value>22 périodes de paie</value>
+  </data>
+  <data name="PayrollPeriod" xml:space="preserve">
+    <value>Période de paie</value>
+  </data>
+  <data name="PeriodEndDate" xml:space="preserve">
+    <value>Date fin de période de paie</value>
+  </data>
+  <data name="AdvanceOnly" xml:space="preserve">
+    <value>Avance seulement</value>
+  </data>
+  <data name="MonthlyPeriodsEDQuarterly" xml:space="preserve">
+    <value>G/R mensuel - Trimestrielle</value>
+  </data>
+  <data name="MonthlyPeriodsED10Periods" xml:space="preserve">
+    <value>G/R mensuel - 10 périodes</value>
+  </data>
+  <data name="WeeklyEDMonthly" xml:space="preserve">
+    <value>Mensuelle</value>
+  </data>
+  <data name="WeeklyPeriodStartDate" xml:space="preserve">
+    <value>Hebdomadaire</value>
+  </data>
+  <data name="SemimonthlyEDQuarterly" xml:space="preserve">
+    <value>G/R bimensuel - Trimestrielle</value>
+  </data>
+  <data name="Num10PeriodsEDQuarterly" xml:space="preserve">
+    <value>G/R 10 périodes - Trimestrielle</value>
+  </data>
+  <data name="MonthlyPeriodsEDMonthly" xml:space="preserve">
+    <value>G/R mensuel - Mensuelle</value>
+  </data>
+  <data name="BiweeklyPeriodStartDate" xml:space="preserve">
+    <value>Aux 2 semaines</value>
+  </data>
+  <data name="BeginningClass4" xml:space="preserve">
+    <value>De classe 4</value>
+  </data>
+  <data name="Num13PeriodsEDMonthly" xml:space="preserve">
+    <value>G/R 13 périodes - Mensuelle</value>
+  </data>
+  <data name="DailyPeriodStartDate" xml:space="preserve">
+    <value>Quotidienne</value>
+  </data>
+  <data name="Num22PeriodsEDMonthly" xml:space="preserve">
+    <value>G/R 22 périodes - Mensuelle</value>
+  </data>
+  <data name="DoEFTCalculation" xml:space="preserve">
+    <value>Créer chèques EFT</value>
+  </data>
+  <data name="NumberOfOptionalFields" xml:space="preserve">
+    <value>Nombre de champs optionnels</value>
+  </data>
+  <data name="BeginningClass2" xml:space="preserve">
+    <value>De classe 2</value>
+  </data>
+  <data name="EmpQuarterly" xml:space="preserve">
+    <value>Empl.- Trimestrielle</value>
+  </data>
+  <data name="BiweeklyEDMonthly" xml:space="preserve">
+    <value>G/R aux 2 semaines - Mensuelle</value>
+  </data>
+  <data name="CalculatePayroll" xml:space="preserve">
+    <value>Calculer la paie</value>
+  </data>
+  <data name="WeeklyED13Periods" xml:space="preserve">
+    <value>13 par an</value>
+  </data>
+  <data name="BiweeklyEDSemimonthly" xml:space="preserve">
+    <value>G/R aux 2 semaines - Bimensuelle</value>
+  </data>
+  <data name="DailyED13Periods" xml:space="preserve">
+    <value>13 par an</value>
+  </data>
+  <data name="Num22PeriodsED10Periods" xml:space="preserve">
+    <value>G/R 22 périodes - 10 périodes</value>
+  </data>
+  <data name="WeeklyEDWeekly" xml:space="preserve">
+    <value>Hebdomadaire</value>
+  </data>
+  <data name="SemimonthlyED10Periods" xml:space="preserve">
+    <value>G/R bimensuel - 10 périodes</value>
+  </data>
+  <data name="DummyField" xml:space="preserve">
+    <value>Champ factice</value>
+  </data>
+  <data name="InsertOptionalFields" xml:space="preserve">
+    <value>Insérer champs optionnels</value>
+  </data>
+  <data name="AdvancesOnly" xml:space="preserve">
+    <value>Avances seulement</value>
+  </data>
+  <data name="SemimonthlyED22Periods" xml:space="preserve">
+    <value>G/R bimensuel - 22 périodes</value>
+  </data>
+  <data name="CheckDate" xml:space="preserve">
+    <value>Date du chèque</value>
+  </data>
+  <data name="EndingClass2" xml:space="preserve">
+    <value>À classe 2</value>
+  </data>
+  <data name="EmpBiweekly" xml:space="preserve">
+    <value>Empl.- Aux 2 semaines</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>Supprimer tout</value>
+  </data>
+  <data name="Process" xml:space="preserve">
+    <value>Traiter</value>
+  </data>
+  <data name="IncludeEarningFrequencies" xml:space="preserve">
+    <value>Inclure les gains/retenues avec ces fréquences</value>
+  </data>
+  <data name="PayEmployeeFrequencies" xml:space="preserve">
+    <value>Payer les employés selon ces fréquences</value>
+  </data>
+  <data name="EmployeesInclude" xml:space="preserve">
+    <value>Inclure</value>
+  </data>
+  <data name="PayrollClasses" xml:space="preserve">
+    <value>Classes</value>
+  </data>
+  <data name="PayPeriodStartDate" xml:space="preserve">
+    <value>Date début de période</value>
+  </data>
+  <data name="RestoreDefaults" xml:space="preserve">
+    <value>Effacer paramètres enregistrés</value>
+  </data>
+  <data name="SaveAsDefaults" xml:space="preserve">
+    <value>Enregistrer paramètres comme implicites</value>
+  </data>
+  <data name="ClearFailedMessage" xml:space="preserve">
+    <value>Les préférences n’ont pas été effacées</value>
+  </data>
+  <data name="WriteFailedMessage" xml:space="preserve">
+    <value>L’enregistrement des préférences a échoué</value>
+  </data>
+  <data name="ProcessFailedMessage" xml:space="preserve">
+    <value>Le calcul de la paie a échoué</value>
+  </data>
+  <data name="DeleteAllFailedMessage" xml:space="preserve">
+    <value>La suppression des anciennes données de calcul a échoué</value>
+  </data>
+  <data name="DeleteAllConfirmation" xml:space="preserve">
+    <value>Voulez-vous supprimer toute paie ayant été traitée mais qui n'a pas été reportée?</value>
+  </data>
+  <data name="Erase" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="Merge" xml:space="preserve">
+    <value>Fusionner</value>
+  </data>
+  <data name="Popup1Section1Item1" xml:space="preserve">
+    <value>Effacer le calcul de paie non reporté pour la date de fin de période spécifiée et autres dates de fin de périodes futures.</value>
+  </data>
+  <data name="Popup1Section1Item2" xml:space="preserve">
+    <value>Calculer le traitement de la paie en cours.</value>
+  </data>
+  <data name="Popup1Section2Item1" xml:space="preserve">
+    <value>Effacer le calcul de paie non reporté pour la date de fin de période spécifiée et autres dates de fin de périodes futures SEULEMENT pour les employés inclus dans la période la paie courante.</value>
+  </data>
+  <data name="Popup1Section2Item2" xml:space="preserve">
+    <value>Calculer la paie courante et fusionner les résultats avec le reste de la paie non reportée.</value>
+  </data>
+  <data name="Popup1Title" xml:space="preserve">
+    <value>Vous avez saisi une date de fin de période pour laquelle un calcul de paie non reporté existe déjà.</value>
+  </data>
+  <data name="PopupSectionTitle1" xml:space="preserve">
+    <value>Sélectionner Effacer pour :</value>
+  </data>
+  <data name="PopupSectionTitle2" xml:space="preserve">
+    <value>Sélectionner Fusionner pour :</value>
+  </data>
+  <data name="PopupSectionTitle3" xml:space="preserve">
+    <value>Sélectionner Annuler pour retourner à l’écran Calculer la paie.</value>
+  </data>
+  <data name="Popup2Section1Item1" xml:space="preserve">
+    <value>Effacer le calcul non reporté pour les dates de fin de périodes futures.</value>
+  </data>
+  <data name="Popup2Section2Item1" xml:space="preserve">
+    <value>Effacer le calcul non reporté pour les dates de fin de périodes futures SEULEMENT pour les employés inclus dans la période la paie courante.</value>
+  </data>
+  <data name="Popup2Title" xml:space="preserve">
+    <value>Il existe un calcul de paie non reporté pour une date de fin de période postérieure à celle que vous avez indiqué pour la période de paie courante.</value>
+  </data>
+  <data name="ClearSuccessMessage" xml:space="preserve">
+    <value>Préférences effacées</value>
+  </data>
+  <data name="WriteSuccessMessage" xml:space="preserve">
+    <value>Préférences enregistrées</value>
+  </data>
+  <data name="EraseFailedMessage" xml:space="preserve">
+    <value>Le calcul non reporté n’a pas été effacé</value>
+  </data>
+  <data name="MergeFailedMessage" xml:space="preserve">
+    <value>Le calcul non reporté n’a pas été fusionné</value>
+  </data>
+  <data name="PrintConfirmation" xml:space="preserve">
+    <value>Voulez-vous imprimer?</value>
+  </data>
+  <data name="PayrollExceptions" xml:space="preserve">
+    <value>Exceptions de traitement de paie</value>
+  </data>
+  <data name="PreCheckRegister" xml:space="preserve">
+    <value>Registre préalable des chèques de paie</value>
+  </data>
+  <data name="ProcessComplete" xml:space="preserve">
+    <value>Traitement terminé.</value>
+  </data>
+  <data name="RundateFailedMessage" xml:space="preserve">
+    <value>La date du dernier traitement de paie n’a pas été mise à jour</value>
+  </data>
+  <data name="ReturncodeFailedMessage" xml:space="preserve">
+    <value>Impossible de récupérer le code de retour du dernier traitement de la paie.</value>
+  </data>
+  <data name="AllowBlank" xml:space="preserve">
+    <value>Autoriser les blancs</value>
+  </data>
+  <data name="AmountValue" xml:space="preserve">
+    <value>Valeur montant</value>
+  </data>
+  <data name="DateValue" xml:space="preserve">
+    <value>Valeur date</value>
+  </data>
+  <data name="Decimals" xml:space="preserve">
+    <value>Décimales</value>
+  </data>
+  <data name="IntegerValue" xml:space="preserve">
+    <value>Valeur nombre entier</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Longueur</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="NumberValue" xml:space="preserve">
+    <value>Valeur nombre</value>
+  </data>
+  <data name="OptionalField" xml:space="preserve">
+    <value>Champ optionnel</value>
+  </data>
+  <data name="OptionalFieldDescription" xml:space="preserve">
+    <value>Description du champ optionnel</value>
+  </data>
+  <data name="TextValue" xml:space="preserve">
+    <value>Valeur texte</value>
+  </data>
+  <data name="TimeValue" xml:space="preserve">
+    <value>Valeur heure</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TypedValueFieldIndex" xml:space="preserve">
+    <value>Index du champ</value>
+  </data>
+  <data name="Validate" xml:space="preserve">
+    <value>Valider</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="ValueDescription" xml:space="preserve">
+    <value>Description de la valeur</value>
+  </data>
+  <data name="ValueSet" xml:space="preserve">
+    <value>Valeur définie</value>
+  </data>
+  <data name="YesNoValue" xml:space="preserve">
+    <value>Valeur Oui ou Non</value>
+  </data>
+  <data name="PreChequeRegister" xml:space="preserve">
+    <value>Registre préalable des chèques de paie</value>
+  </data>
+  <data name="AllCheques" xml:space="preserve">
+    <value>Tous les chèques</value>
+  </data>
+  <data name="IgnoreNegativeChecks" xml:space="preserve">
+    <value>Ignorer les chèques négatifs</value>
+  </data>
+  <data name="IgnoreZeroAndNegativeChecks" xml:space="preserve">
+    <value>Ignorer chèques nuls et négatifs</value>
+  </data>
+  <data name="ChequeDate" xml:space="preserve">
+    <value>Date du chèque</value>
+  </data>
+  <data name="DoEFTCheques" xml:space="preserve">
+    <value>Créer des chèques EFT</value>
+  </data>
+</root>
